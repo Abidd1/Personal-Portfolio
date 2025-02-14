@@ -1,72 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- Built by Abid Ali -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <url>
+    <loc>https://abid-gamma.vercel.app/index.html</loc>
+    <lastmod>YYYY-MM-DD</lastmod>
+    <changefreq>daily</changefreq>  <priority>1.0</priority>      </url>
 
-<url>
-  <loc>https://abid-gamma.vercel.app/</loc>
-  <lastmod>2025-02-14T16:34:51+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/about_Me.html</loc>
-  <lastmod>2025-02-14T16:34:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/Clients.html</loc>
-  <lastmod>2025-02-14T16:34:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/Works.html</loc>
-  <lastmod>2025-02-14T16:34:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/Achievments.html</loc>
-  <lastmod>2025-02-14T16:34:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/components.html</loc>
-  <lastmod>2025-02-14T16:34:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/icons.html</loc>
-  <lastmod>2025-02-14T16:34:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/animations.html</loc>
-  <lastmod>2025-02-14T16:34:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/Hire_Now.html</loc>
-  <lastmod>2025-02-14T16:34:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/login.html</loc>
-  <lastmod>2025-02-14T16:34:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/index.html</loc>
-  <lastmod>2025-02-14T16:34:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://abid-gamma.vercel.app/sign-up.html</loc>
-  <lastmod>2025-02-14T16:34:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://abid-gamma.vercel.app/about_Me.html</loc>
+    <lastmod>YYYY-MM-DD</lastmod>
+    <changefreq>weekly</changefreq> <priority>0.8</priority>      </url>
 
+  <url>
+    <loc>https://abid-gamma.vercel.app/Clients.html</loc>
+    <lastmod>YYYY-MM-DD</lastmod>
+    <changefreq>weekly</changefreq> <priority>0.8</priority>      </url>
+
+  <url>
+    <loc>https://abid-gamma.vercel.app/Works.html</loc>
+    <lastmod>YYYY-MM-DD</lastmod>
+    <changefreq>weekly</changefreq> <priority>0.8</priority>      </url>
+
+  <url>
+    <loc>https://abid-gamma.vercel.app/Achievments.html</loc>
+    <lastmod>YYYY-MM-DD</lastmod>
+    <changefreq>weekly</changefreq> <priority>0.8</priority>      </url>
+
+  <url>
+    <loc>https://abid-gamma.vercel.app/Hire_Now.html</loc>
+    <lastmod>YYYY-MM-DD</lastmod>
+    <changefreq>weekly</changefreq> <priority>0.8</priority>      </url>
 
 </urlset>
