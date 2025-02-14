@@ -1,0 +1,206 @@
+body {
+    border: 2px solid black;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-top: 10ch;
+    margin-bottom: 10ch;
+    background-color: black;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+    text-align: center;
+    font-style: unset;
+  }
+  p,
+  label,
+  button,
+  input {
+    margin: 10px;
+  }
+  div {
+    background-color: none;
+  }
+  /* Customising Login Button */
+  .Login 
+  {
+    width: 250px;
+    height: 32px;
+    border-radius: 2ch;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #0004ff;
+    text-transform: uppercase;
+    color: white;
+  }
+  /* Forget Password */
+  .ad {
+    text-align: right;
+    text-decoration: none;
+    border: none;
+    margin-right: 4ch;
+    color:black;
+    color: black;}
+  i {
+    text-align: center;
+  }
+  .ai,
+  .ae {
+    text-align: center;
+  }
+  .div{
+      margin: 0 auto;
+      text-align: center;
+      width: 300px;
+      height: 20px;
+      cursor: pointer;}
+  
+  .password {
+    border-width: 1px 4px 12px 4px;
+    Transform: translatex(10px)
+  }
+  .ac,
+  input,
+  .password {
+    border-radius: none;
+    border-width: none;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+  }
+  i{
+    padding-left: 10px;
+  }
+  /* Background styles */
+  body {
+    background-color: rgb(255, 255, 255);
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(312, 3%, 65%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(0, 42%, 84%) 0, transparent 55%);
+  }
+  
+  /* Glassmorphism card effect */
+  .card{
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 17, 17, 0.54);
+    border-radius: 12px solid rgb(0, 0, 0);
+    border: 1px solid rgba(221, 214, 214, 0.125);
+   
+  }
+  a:visited{
+    color: black;
+  }
+  a:hover{
+    color: black;
+    text-decoration: underline;
+    text-transform: inherit;
+    text-decoration: wavy;
+    text-transform: capitalize;
+  }
+  a:focus{
+    background-color: none;
+    color: blue;
+    text-decoration: solid;
+    text-transform: inherit;
+    text-overflow: ellipsis;
+    text-indent: 1ch;
+  }
+ a:active{
+  color: blue;
+  text-decoration: wavy;
+  text-decoration: none;
+  text-decoration: solid;
+  text-decoration: wavy;
+ }
+  div:link{
+    color: blue;
+    text-decoration: blue;
+  }
+  div:visited{
+    color: blue;
+    background-color: blue;
+  }
+  div:hover{
+    color: black;
+    text-decoration: none;
+  }
+  div:focus{
+    color: blue;
+    text-decoration: underline;
+  }
+  input,.name:focus{
+    text-decoration: solid green;
+    border-radius: 1px solid green
+    ;
+  }
+  .first{
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  #facebook{
+    color: blue;
+    width: 20px;
+    height: 20px;
+  }
+  #twitter{
+    width: 20px;
+    height: 20px;
+    color:rgb(8, 29, 29)
+  }
+  #google{
+    color: rgb(78, 78, 236);
+  }
+  #pic_profile{
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    text-indent:  -9999px;
+  }
+  .Login :hover{
+    background-color: black ;
+    width: 500px;
+    height: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+  
+  }
+  .Login:active{
+    background: #000000;
+    background-color: black;
+  }
+  .Login:focus{
+    background: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color:none;
+  }
+.Remember{
+    color: white;
+    text-decoration: solid white;
+    margin-right: 20px;
+}
+.Name,.input{
+    background-color: none;
+    transform: translateX(10px);
+}
+.Forget{
+  text-align: right;
+  margin-left: 20px;
+}
+:focus::placeholder{
+  color: green;
+}
+:focus::placeholder{
+border-color: green;
+}
+input::placeholder{
+  background-color: inherit;
+  Transform: translatex(10px)
+}
+/* Content not of the web area  */

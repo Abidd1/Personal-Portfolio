@@ -1,0 +1,43 @@
+/* Styles for smaller screens (e.g., phones) */
+@media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+    .column {
+      width: 100%; /* Stack columns vertically */
+    }
+  }
+  
+  /* Styles for medium screens (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+      width: 90%;
+    }
+    .column {
+      width: 50%; /* Two columns side by side */
+    }
+  }
+  
+  /* Styles for larger screens (e.g., desktops) */
+  @media (min-width: 992px) {
+    .container {
+      width: 1200px;
+    }
+    .column {
+      width: 33.33%; /* Three columns side by side */
+    }
+  }
+  /* Full Contents Customistion Start from Here! */
+  .supper1{
+    background-image: url(../img/Background_image.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+   
+  }
+
+  /* My Customisation start from here */
