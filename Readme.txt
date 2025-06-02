@@ -1,6 +1,6 @@
-Thanks for downloading this theme!
+Thanks for viewing this Portfolio!
 
-Theme Name: Vesperr
-Theme URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+Author: Abid Ali
+URL: https://github.com/Abidd1
+Developer: Abid Ali
+Portfolio URL: https://abid-gamma.vercel.app
