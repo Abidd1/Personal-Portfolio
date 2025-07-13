@@ -1,59 +1,77 @@
-<!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebSite">
 <head>
   <meta charset="utf-8">
-  <title itemprop="name">Abid Ali - Expert WordPress & MERN Stack Developer and Designer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=0.9" />
-  <meta name="description" content="Looking for Best Website Developer and Designer through Coding? Here you go, Abid Ali is #1 ranking website designer and developer across KP and Islamabad." itemprop="description" />
+  <title itemprop="name">Abid Ali - Expert WordPress & MERN Stack Developer | Web Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Changed initial-scale to 1.0 -->
+  <meta name="description" content="Abid Ali is a top-rated WordPress and MERN Stack Developer & Web Designer based in KP and Islamabad, Pakistan. Specializing in creating efficient, user-friendly websites and applications. Let's build your online presence together!" itemprop="description" />
+  <meta name="keywords" content="WordPress developer, MERN Stack developer, web designer, website development, custom websites, React developer, Node.js developer, Express.js developer, MongoDB developer, freelance web developer, Pakistan web developer, US web developer, European web developer" /> <!-- Added keywords -->
   <meta name="author" content="Abid Ali" />
-  <!-- Add Organization Schema -->
+
+  <!-- Organization Schema -->
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Organization",
-    "url": "https://yourwebsite.com", // Replace with your actual website URL
+    "url": "https://www.yourwebsite.com", <!-- Replace with your actual website URL -->
     "name": "Abid Ali - Web Development & Design",
-    "logo": "https://yourwebsite.com/assets/img/Abid_Ali_logo.jpg", // Replace with your actual logo URL
+    "logo": "https://www.yourwebsite.com/assets/img/Abid_Ali_logo.jpg", <!-- Replace with your actual logo URL -->
+    "email": "abidali129418@gmail.com",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61551367921508",
+      "https://www.linkedin.com/in/abid-ali-b89794334/",
+      "https://github.com/Abidd1",
+      "https://x.com/AbidAli014"
+    ],
     "contactPoint": [
       {
         "@type": "ContactPoint",
         "telephone": "+92-348-4492955",
         "contactType": "Customer service",
-        "areaServed": ["PK", "KP", "Islamabad"]
+        "areaServed": ["PK", "US", "EU"], <!-- Broaden areaServed for targeting -->
+        "availableLanguage": ["en"]
       },
       {
         "@type": "ContactPoint",
         "email": "abidali129418@gmail.com",
         "contactType": "Customer service",
-        "areaServed": ["PK", "KP", "Islamabad"]
+        "areaServed": ["PK", "US", "EU"],
+        "availableLanguage": ["en"]
       }
     ],
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61551367921508",
-      "https://www.linkedin.com/in/abid-ali-b89794334/",
-      "https://github.com/Abidd1",
-      "https://x.com/AbidAli014"
-    ]
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wari, Dir Upper",
+        "addressRegion": "Khyber Pakhtunkhwa",
+        "addressCountry": "Pakistan"
+      }
+    }
   }
   </script>
-  <!-- Add Person Schema -->
+
+  <!-- Person Schema -->
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Person",
     "name": "Abid Ali",
-    "jobTitle": "WordPress Developer, MERN Stack Developer, Web Designer",
-    "url": "https://yourwebsite.com", // Replace with your actual website URL
+    "jobTitle": "Expert WordPress Developer, MERN Stack Developer, Web Designer",
+    "url": "https://www.yourwebsite.com", <!-- Replace with your actual website URL -->
+    "image": "https://www.yourwebsite.com/assets/img/Abid_Ali_logo.jpg", <!-- Link to a professional photo of yourself -->
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61551367921508",
       "https://www.linkedin.com/in/abid-ali-b89794334/",
       "https://github.com/Abidd1",
       "https://x.com/AbidAli014"
     ],
-    "description": "An expert WordPress and MERN Stack web developer and designer with a focus on building clean, efficient, and user-friendly web applications. Specializing in WordPress (Elementor) and MERN Stack (MongoDB, Express, React, Native) with over 2 years of experience and 10+ projects completed."
+    "description": "Abid Ali is a highly skilled and experienced WordPress and MERN Stack web developer and designer, dedicated to creating clean, efficient, and user-friendly web applications. With over 2 years of experience and a portfolio of 10+ successful projects, Abid specializes in WordPress (Elementor) and the MERN Stack (MongoDB, Express.js, React, React Native). He is passionate about building innovative solutions and collaborating with clients globally.",
+    "knowsLanguage": "en", <!-- Specify languages you work with -->
+    "areaServed": ["PK", "US", "EU"], <!-- Broaden areaServed for targeting -->
+    "nationality": "Pakistani"
   }
   </script>
-  <!-- styles -->
+
+  <!-- Other Head Elements -->
   <link href="assets/css/bootstrap.css" rel="stylesheet" />
   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
   <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
@@ -68,831 +86,716 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
   <link rel="shortcut icon" href="./assets/img/A..jpg" type="image/x-icon">
-  <!-- Corrected manifest link -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- =======================================================
-    Theme Name: Abid Ali
-    Theme URL: https://github.com/Abidd1
-    Author: Abid Ali
-    Author URL: https://github.com/Abidd1
-  ======================================================= -->
 </head>
-
-<body>
-  <header style="max-width: 100%;">
-    <!-- start top -->
-    <div style="height: 60px;" id="topnav" class="navbar navbar-fixed-top default">
-      <div class="navbar-inner">
-        <div class="navigation">
-          <nav>
-            <ul style="width: 130px; height: 0px;">
-              <!-- Schema for Logo -->
-              <li itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-                <meta itemprop="url" content="https://yourwebsite.com/assets/img/Abid_Ali_12-removebg-preview.png">
-                <img src="./assets/img/Abid_Ali_12-removebg-preview.png" alt="Abid Ali Logo">
-              </li>
-            </ul>
-            <ul class="nav pull-right">
-              <li class="current"><a href="#intro" itemprop="url">Home</a></li>
-              <li><a href="./about_Me.html" class="external" itemprop="url">About</a></li>
-              <li><a href="./Clients.html" class="external" itemprop="url">Clients</a></li>
-              <li><a href="./Works.html" class="external" itemprop="url">Works</a></li>
-              <li><a href="./Achievments.html" class="external" itemprop="url">Achievments</a></li>
-              <li><a href="./Hire_Now.html" class="external" itemprop="url">Hire Now</a></li>
-              <li><a href="https://drive.google.com/file/d/1IvkI7Tjxlu9qlGvvdVaODE2YdPJ72FnD/view?usp=sharing" style="border: 2px solid blue; border-radius: 4ch; width: 100px; text-align: center;" class="external" itemprop="url">Download CV</a></li>
-            </ul>
-          </nav>
+<header>
+  <!-- start top -->
+  <div id="topnav" class="navbar navbar-fixed-top default">
+    <div class="navbar-inner">
+      <div class="container"> <!-- Added container for better responsiveness -->
+        <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <div class="logo"> <!-- Added a logo div -->
+          <a href="index.html"> <!-- Link to homepage -->
+            <img src="./assets/img/Abid_Ali_12-removebg-preview.png" alt="Abid Ali Logo" itemprop="logo">
+          </a>
         </div>
-        <!--/.nav-collapse -->
-      </div>
-    </div>
-    </div>
-    <!-- end top -->
-  </header>
-  <!-- section intro -->
-  <section id="intro" itemprop="mainContentOfPage">
-    <div class="slogan">
-      <div class="icon">
-        <ul>
-          <li itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-            <meta itemprop="url" content="https://yourwebsite.com/assets/img/let's_talk.webp">
-            <img style="width: 15%; margin: 0 auto; height: 10%; border-radius: 50%;" src="./assets/img/let's_talk.webp" alt="Abid Ali - Let's Talk">
-          </li>
-          <br>
-          <li style="font-size: 2em; color: white;" itemprop="name">Abid Ali</li>
-        </ul>
-      </div>
-      <h1 itemprop="headline">An expert <span> WordPress | MERN Stack Developer </span> and Designer</h1>
-      <h2 itemprop="alternativeHeadline">Build to brand online!</h2>
-      <ul class="social-profile">
-        <!-- Use Font Awesome classes -->
-        <li><a href="https://www.facebook.com/profile.php?id=61551367921508" class="external" itemprop="url"><i class="fa fa-facebook-square fa-3x icon-circled"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/abid-ali-b89794334/" class="external" itemprop="url"><i class="fa fa-linkedin-square fa-3x icon-circled"></i></a></li>
-        <li><a href="https://github.com/Abidd1" class="external" itemprop="url"><i class="fa fa-github-square fa-3x icon-circled"></i></a></li>
-        <li><a href="https://x.com/AbidAli014" class="external" itemprop="url"><i class="fa fa-twitter-square fa-3x icon-circled"></i></a></li>
-        <li><a href="https://www.pinterest.com/pdfebooksworld/?actingBusinessId=1128574125279979455" class="external" itemprop="url"><i class="fa fa-pinterest-square fa-3x icon-circled"></i></a></li>
-        <li><a href="https://api.whatsapp.com/send/?phone=923484492955&text&type=phone_number&app_absent=0" class="external" itemprop="url"><i class="fa fa-mobile fa-3x icon-circled"></i></a></li>
-        <li><a href="mailto: abidali129418@gmail.com" class="external" itemprop="url"><i class="fa fa-envelope-square fa-3x icon-circled"></i></a></li>
-      </ul>
-      <br>
-      <div>
-        <ul>
-          <li>
-            <label for="search"></label>
-            <input type="search" value="Search" id="search" style="color: rgb(0, 0, 7); width: 50%; height: 7px; text-align: center; border-radius: 5ch;">
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- end intro -->
-
-  <!-- Section about -->
-  <section id="about" class="section" itemprop="about">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>About Me</span></h3>
-          </div>
-          <br>
-          <br>
-          <div style="margin: 0 auto; max-width: 960px;">
-            <div style="align-items: center; align-content: center; text-align: center;">
-              <!-- Corrected image path and added alt text and schema -->
-              <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                <meta itemprop="url" content="https://yourwebsite.com/assets/img/Abid_Ali_logo.jpg">
-                <img src="./assets/img/Abid_Ali_logo.jpg" alt="Abid Ali's professional photo" itemprop="contentUrl" />
-                <meta itemprop="description" content="Abid Ali, WordPress & MERN Stack Developer and Designer">
-              </figure>
-            </div>
-          </div>
-          <div class="sub-heading">
-            <p itemprop="description">
-              <strong>I'm</strong> a passionate WordPress and MERN Stack web <strong>Developer</strong> and <strong>Designer</strong> with a focus on building clean, efficient, and <strong>user-friendly</strong> web applications. I specialize in <strong>WordPress</strong> (Elementer) and <strong>MERN Stack</strong> (Mongo DB, Express, React, Native) with <strong>+2</strong> years of experience and completed <strong>10+</strong> projects and assignments. I enjoy tackling challenging projects that push my skills. I'm always eager to learn new technologies and collaborate with others to create innovative solutions. <span><a href="./about_Me.html">Learn more...</a></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end section about -->
-
-  <!-- Education Section start from here -->
-  <!-- Using unique IDs for sections -->
-  <section id="education" class="section parallax dark" itemprop="hasPart" itemscope itemtype="http://schema.org/CreativeWorkSeries">
-    <meta itemprop="name" content="Abid Ali's Education">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>Education</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-              Here is a brief overview of my Educational Background.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Item 1: School -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="hasPart" itemscope itemtype="http://schema.org/EducationalOrganization">
-            <div class="halftop">
-              <h4 itemprop="name"><strong> School </strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-graduation-cap fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Passed matric exam from Shaheen Model School in field of Pre-medical with grade A in 2020.
-            </p>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Item 2: College -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="hasPart" itemscope itemtype="http://schema.org/EducationalOrganization">
-            <div class="halftop">
-              <h4 itemprop="name"><strong> College </strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-graduation-cap fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Did FSc from GC Wari Dir Upper in field of Pre-Medical in 2022. Passed the exam with Grade A.
-            </p>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Item 3: Dev Education -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="hasPart" itemscope itemtype="http://schema.org/EducationalOrganization">
-            <div class="halftop">
-              <h4 itemprop="name"><strong>Dev Education</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-code fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Started a journey of WordPress and MERN Stack Development at SMIT Peshawar in 2022.
-            </p>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Item 4: Others -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="hasPart" itemscope itemtype="http://schema.org/EducationalOrganization">
-            <div class="halftop">
-              <h4 itemprop="name"><strong>Others</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-briefcase fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Blogging, SEO, Digital Marketing from DigiSkills.pk and Graphics Designing from Learnonline.pk.
-            </p>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Education section ends here -->
-
-  <!-- Skills Section Start from here -->
-  <section id="skills" class="section parallax dark" itemprop="hasPart" itemscope itemtype="http://schema.org/UserSkills">
-    <meta itemprop="name" content="Abid Ali's Skills">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>Skills</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-              Here are the brief overview of my skills and interests.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Skill 1: MERN Stack -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="skill" itemscope itemtype="http://schema.org/SoftwareApplication">
-            <div class="halftop">
-              <h4 itemprop="name"><strong>MERN Stack Developer</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-laptop fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Developing Websites from scratch using MERN (MongoDB, Express, React, Native).
-            </p>
-            <div style="display: flex;">
-              <p>Expertise</p>
-              <p style="text-align: right; align-items: end; margin-left: 60%;">89%</p>
-            </div>
-            <!-- This progress bar is purely visual. Schema doesn't capture percentages directly. -->
-            <div style="width: 95%; height: 1%; background-color: rgb(105, 105, 105);">
-              <p style="width: 88%; background-color: blue; height: 4px;"></p>
-            </div>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Skill 2: WordPress -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="skill" itemscope itemtype="http://schema.org/WebPage"> <!-- WordPress can be seen as a platform/CMS or a WebPage type -->
-            <div class="halftop">
-              <h4 itemprop="name"><strong>WordPress Developer</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-wordpress fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              A skilled WordPress Developer and Designer. Developed +3 WordPress sites using Elementor.
-            </p>
-            <div style="display: flex;">
-              <p>Expertise</p>
-              <p style="text-align: right; align-items: end; margin-left: 63%;">91%</p>
-            </div>
-            <div style="width: 95%; height: 1%; background-color: rgb(105, 105, 105);">
-              <p style="width: 88%; background-color: blue; height: 4px;"></p>
-            </div>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Skill 3: App Developer -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="skill" itemscope itemtype="http://schema.org/MobileApplication">
-            <div class="halftop">
-              <h4 itemprop="name"><strong>App Developer & Designer</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-mobile fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Developing and Designing user-friendly and visually appealing mobile applications.
-            </p>
-            <div style="display: flex;">
-              <p>Expertise</p>
-              <p style="text-align: right; align-items: end; margin-left: 59%;">85%</p>
-            </div>
-            <div style="width: 95%; height: 1%; background-color: rgb(105, 105, 105);">
-              <p style="width: 88%; background-color: blue; height: 4px;"></p>
-            </div>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Skill 4: Others -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="skill"> <!-- General skill, no specific schema type needed -->
-            <div class="halftop">
-              <h4 itemprop="name"><strong>Others</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-bullhorn fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Blogging, SEO, Graphic Designing, Blog Banners Design and Social Media Marketing.
-            </p>
-            <div style="display: flex;">
-              <p>Expertise</p>
-              <p style="text-align: right; align-items: end; margin-left: 60%;">89%</p>
-            </div>
-            <div style="width: 95%; height: 1%; background-color: rgb(105, 105, 105);">
-              <p style="width: 88%; background-color: blue; height: 4px;"></p>
-            </div>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Skills Section Ends Here -->
-
-  <!-- Section Services Start from Here -->
-  <!-- Using unique IDs for sections -->
-  <section id="services" class="section parallax dark" itemprop="hasPart" itemscope itemtype="http://schema.org/Service">
-    <meta itemprop="name" content="Abid Ali's Services">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>Our services</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-              Here are the services we provide for you with affordable prices and more.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Service 1: WordPress -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="serviceType" itemscope itemtype="http://schema.org/WebDevelopment">
-            <div class="halftop">
-              <h4 itemprop="name"><strong>WordPress Web Development</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-wordpress fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Build a site using WordPress (Elementor), Wix, Google Sites, Frammer, and more.
-            </p>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Service 2: Web from Scratch -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="serviceType" itemscope itemtype="http://schema.org/WebDevelopment">
-            <div class="halftop">
-              <h4 itemprop="name"><strong>Web through Scratch</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-code fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Build your dream website through coding languages like HTML, CSS, JavaScript, and MERN (MongoDB, Express, React, Native).
-            </p>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Service 3: Mobile App Dev -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="serviceType" itemscope itemtype="http://schema.org/MobileApplication">
-            <div class="halftop">
-              <h4 itemprop="name"><strong>Mobile Application Development</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-mobile fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              Build user-friendly mobile applications and websites at affordable prices.
-            </p>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-        <!-- Service 4: Others -->
-        <div class="span3">
-          <div class="box aligncenter" itemprop="serviceType"> <!-- General service, no specific schema -->
-            <div class="halftop">
-              <h4 itemprop="name"><strong>Others</strong></h4>
-              <!-- Font Awesome -->
-              <i class="fa fa-briefcase fa-4x"></i>
-            </div>
-            <p itemprop="description">
-              We provide extra features for your site such as Blogging, SEO, Graphic Designing, and Brand Marketing.
-            </p>
-            <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end section services -->
-
-  <!-- Clients Section start from here -->
-  <!-- My Customisation -->
-  <section id="clients" style="display: flex; flex-wrap: wrap; padding: 6px; margin: 8%;">
-    <div class="heading">
-      <h3><span>OUR CLIENTS</span></h3>
-      <br>
-      <br>
-      <br>
-      <h5>So, let's take a look for our clients what they says in feedback!</h5>
-      <br>
-      <br>
-    </div>
-    <br>
-    <br>
-    <!-- Client 1 -->
-    <figure class="snip1390" itemprop="testimonial" itemscope itemtype="http://schema.org/Review">
-      <!-- Corrected image path and added schema properties -->
-      <img src="./assets/img/let's_talk.webp" alt="Muhammad Ali's profile picture" class="profile" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-      <meta itemprop="url" content="https://yourwebsite.com/assets/img/let's_talk.webp">
-      <figcaption>
-        <h2 itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Muhammad Ali</span></h2>
-        <h4 itemprop="jobTitle">CEO of pdfebooksworld.com</h4>
-        <blockquote itemprop="reviewBody">Working with Abid Ali was an absolute pleasure. They were highly skilled, communicative, and delivered exceptional results. <a href="./Clients.html">Learn More...</a></blockquote>
-      </figcaption>
-    </figure>
-    <!-- Client 2 -->
-    <figure class="snip1390 hover" itemprop="testimonial" itemscope itemtype="http://schema.org/Review">
-      <!-- Corrected image path -->
-      <img src="./assets/img/S_tatheer.jpg" alt="Tatheer Hussain's profile picture" class="profile" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-      <meta itemprop="url" content="https://yourwebsite.com/assets/img/S_tatheer.jpg">
-      <figcaption>
-        <h2 itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Tatheer Hussain</span></h2>
-        <h4 itemprop="jobTitle">Dev Instructor at SMIT</h4>
-        <blockquote itemprop="reviewBody">Abid Ali is a valuable asset to any project. They are an excellent collaborator, demonstrated strong communication skills, <a href="./Clients.html">Learn More...</a></blockquote>
-      </figcaption>
-    </figure>
-    <!-- Client 3 -->
-    <figure class="snip1390" itemprop="testimonial" itemscope itemtype="http://schema.org/Review">
-      <!-- Corrected image path -->
-      <img src="./assets/img/Junaid.jpeg" alt="Junaid Khan's profile picture" class="profile" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-      <meta itemprop="url" content="https://yourwebsite.com/assets/img/Junaid.jpeg">
-      <figcaption>
-        <h2 itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Junaid Khan</span></h2>
-        <h4 itemprop="jobTitle">Co-founder of AI_Arch</h4>
-        <blockquote itemprop="reviewBody">Collaborating with Abid Ali was a fantastic experience. They were incredibly communicative and responsive throughout <a href="./Clients.html">Learn More...</a></blockquote>
-      </figcaption>
-    </figure>
-  </section>
-
-  <div style="text-align: center; align-items: center; align-content: center;">
-    <button style=" color: white; background-color: rgb(91, 91, 255); border-radius: 4ch; width: 200px; height: 40px;"><a href="./Clients.html" style="color: white;">View More</a></button>
-  </div>
-
-  <!-- /Static Background Ends here -->
-  <section id="works" class="section gray-bg" itemprop="hasPart" itemscope itemtype="http://schema.org/ItemList">
-    <meta itemprop="name" content="Abid Ali's Recent Works">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>Recent works</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-              We have a history of doing what our name implies, creating a visual language around the beliefs of the brands we work with. Let's take a look at what we are working on or have done!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <ul class="filter">
-            <li class="all active"><a href="#" class="btn btn-theme">All categories</a></li>
-            <li class="web"><a href="#" class="btn btn-theme">Web Development</a></li>
-            <li class="brand"><a href="#" class="btn btn-theme">Web Design</a></li>
-            <li class="graphic"><a href="#" class="btn btn-theme">Graphics design</a></li>
-            <li class="graphic"><a href="#" class="btn btn-theme">Blogs and SEO</a></li>
+        <nav class="nav-collapse collapse"> <!-- Use nav-collapse for Bootstrap 2.x -->
+          <ul class="nav pull-right">
+            <li class="current"><a href="#intro" itemprop="url">Home</a></li>
+            <li><a href="./about_Me.html" class="external" itemprop="url">About</a></li>
+            <li><a href="./Clients.html" class="external" itemprop="url">Clients</a></li>
+            <li><a href="./Works.html" class="external" itemprop="url">Works</a></li>
+            <li><a href="./Achievments.html" class="external" itemprop="url">Achievements</a></li> <!-- Corrected spelling -->
+            <li><a href="./Hire_Now.html" class="external" itemprop="url">Hire Now</a></li>
+            <li>
+              <a href="https://drive.google.com/file/d/1IvkI7Tjxlu9qlGvvdVaODE2YdPJ72FnD/view?usp=sharing"
+                 style="border: 2px solid blue; border-radius: 4ch; width: 100px; text-align: center; display: inline-block; padding: 5px;"
+                 class="external" itemprop="url" download>
+                Download CV
+              </a>
+            </li>
           </ul>
-          <div class="clear">
-          </div>
-          <div class="row">
-            <ul class="portfolio-area da-thumbs">
-              <!-- Project 1: Educational Website -->
-              <li class="portfolio-item" data-id="id-0" data-type="web" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebSite">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <!-- Corrected image path and added schema properties -->
-                      <img src="assets/img/Educational_Website.jpeg" alt="Educational Website Project" title="Educational Website Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                      <meta itemprop="url" content="https://yourwebsite.com/assets/img/Educational_Website.jpeg">
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5 itemprop="name"><strong>Education Website</strong></h5>
-                        <a href="https://pdfebooksworld.com" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
-                        <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
-                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/Educational_Website.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
-                          <meta itemprop="url" content="https://yourwebsite.com/assets/img/Educational_Website.jpeg">
-                        </span>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Project 2: E-commerce Site -->
-              <li class="portfolio-item" data-id="id-0" data-type="web" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebSite">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <!-- Corrected image path -->
-                      <img src="assets/img/E-commerce_website.jpeg" alt="E-commerce Website Project" title="E-commerce Website Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                      <meta itemprop="url" content="https://yourwebsite.com/assets/img/E-commerce_website.jpeg">
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5 itemprop="name"><strong>E-commerece site</strong></h5>
-                        <a href="https://codevoyagers.vercel.app/" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
-                        <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
-                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/E-commerce_website.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
-                          <meta itemprop="url" content="https://yourwebsite.com/assets/img/E-commerce_website.jpeg">
-                        </span>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Project 3: Graphics Design -->
-              <li class="portfolio-item" data-id="id-0" data-type="brand" itemprop="itemListElement" itemscope itemtype="http://schema.org/CreativeWork">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <!-- Corrected image path -->
-                      <img src="assets/img/E-commerce_graphics.jpg" alt="E-commerce Graphics Design Project" title="E-commerce Graphics Design Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                      <meta itemprop="url" content="https://yourwebsite.com/assets/img/E-commerce_graphics.jpg">
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5 itemprop="name"><strong>Graphics Design</strong></h5>
-                        <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
-                        <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
-                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/E-commerce_graphics.jpg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
-                          <meta itemprop="url" content="https://yourwebsite.com/assets/img/E-commerce_graphics.jpg">
-                        </span>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Project 4: Web Page Design (Tour Booking) -->
-              <li class="portfolio-item" data-id="id-0" data-type="photo" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebPage">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <!-- Corrected image path -->
-                      <img src="assets/img/tour_booking.jpeg" alt="Tour Booking Web Page Design Project" title="Tour Booking Web Page Design Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                      <meta itemprop="url" content="https://yourwebsite.com/assets/img/tour_booking.jpeg">
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5 itemprop="name"><strong>Web Page Design</strong></h5>
-                        <a href="https://visa-consultancy-murex.vercel.app/" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
-                        <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
-                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/tour_booking.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
-                          <meta itemprop="url" content="https://yourwebsite.com/assets/img/tour_booking.jpeg">
-                        </span>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Project 5: Graphics Design (E-commerce) -->
-              <li class="portfolio-item" data-id="id-0" data-type="graphic" itemprop="itemListElement" itemscope itemtype="http://schema.org/CreativeWork">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <!-- Corrected image path -->
-                      <img src="assets/img/Graphics_ecomerce.jpeg" alt="E-commerce Graphic Design Project" title="E-commerce Graphic Design Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                      <meta itemprop="url" content="https://yourwebsite.com/assets/img/Graphics_ecomerce.jpeg">
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5 itemprop="name"><strong>Graphic Design</strong></h5>
-                        <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
-                        <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
-                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/Graphics_ecomerce.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
-                          <meta itemprop="url" content="https://yourwebsite.com/assets/img/Graphics_ecomerce.jpeg">
-                        </span>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Project 6: Web Design (Art Gallery) -->
-              <li class="portfolio-item" data-id="id-0" data-type="graphic" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebPage">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <!-- Corrected image path -->
-                      <img src="assets/img/Art_gallery.jpeg" alt="Art Gallery Web Design Project" title="Art Gallery Web Design Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                      <meta itemprop="url" content="https://yourwebsite.com/assets/img/Art_gallery.jpeg">
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5 itemprop="name"><strong>Web Design</strong></h5>
-                        <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
-                        <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
-                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/Art_gallery.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
-                          <meta itemprop="url" content="https://yourwebsite.com/assets/img/Art_gallery.jpeg">
-                        </span>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Project 7: Web Page Design (Tech Page) -->
-              <li class="portfolio-item" data-id="id-0" data-type="photo" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebPage">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <!-- Corrected image path -->
-                      <img src="assets/img/tech_page.jpeg" alt="Tech Page Web Design Project" title="Tech Page Web Design Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                      <meta itemprop="url" content="https://yourwebsite.com/assets/img/tech_page.jpeg">
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5 itemprop="name"><strong>Web Page Design</strong></h5>
-                        <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
-                        <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
-                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/tech_page.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
-                          <meta itemprop="url" content="https://yourwebsite.com/assets/img/tech_page.jpeg">
-                        </span>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Project 8: Web Page Design (Tour Booking Site) -->
-              <li class="portfolio-item" data-id="id-0" data-type="ilustrator" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebPage">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <!-- Corrected image path -->
-                      <img src="assets/img/tour_booking_site.jpeg" alt="Tour Booking Site Web Page Design Project" title="Tour Booking Site Web Page Design Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                      <meta itemprop="url" content="https://yourwebsite.com/assets/img/tour_booking_site.jpeg">
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5 itemprop="name"><strong>Web Page Design</strong></h5>
-                        <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
-                        <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
-                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/tour_booking_site.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
-                          <meta itemprop="url" content="https://yourwebsite.com/assets/img/tour_booking_site.jpeg">
-                        </span>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+        </nav>
       </div>
     </div>
-  </section>
-  <!-- section works -->
-
-  <!-- Static Background Start from Here! -->
-  <div class="supper" style="display: flex; flex-wrap: wrap;">
-    <div class="supper1a" style="float: left;">1</div>
-    <div class="supper2a" style="float: right;">2</div>
   </div>
-  <!-- /Static Website Ends Here! -->
+  <!-- end top -->
+</header>
 
-  <!-- Clients Contact Section start from here! -->
-  <section id="contact-promo" style="background-color: rgb(219, 235, 250);">
-    <div style="margin: 0 auto; max-width: 960px; margin-right: 30%;">
-      <div style="align-items: center; align-content: center; text-align: center;">
-        <!-- Corrected image path and added schema -->
-        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-          <meta itemprop="url" content="https://yourwebsite.com/assets/img/talk_about_project.jpg">
-          <img style="width: 55%; height: 45%; border-radius: 50%;" src="./assets/img/talk_about_project.jpg" alt="Let's Talk About Your Project" itemprop="contentUrl" />
-          <meta itemprop="description" content="Discuss your project with Abid Ali">
-        </figure>
-      </div>
-    </div>
-    <div style="margin: 0 auto; max-width: 960px; margin-left: 30%;">
-      <div style="align-items: center; align-content: center; text-align: center;">
-        <!-- Corrected image path and added schema -->
-        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-          <meta itemprop="url" content="https://yourwebsite.com/assets/img/let's_talk.webp">
-          <img style="width: 55%; height: 45%; border-radius: 50%; background-color: rgb(255, 255, 79);" src="./assets/img/let's_talk.webp" alt="Let's Talk - Contact Abid Ali" itemprop="contentUrl" />
-          <meta itemprop="description" content="Abid Ali is ready to discuss your project">
-        </figure>
-      </div>
-    </div>
-  </section>
-  <!-- Clients Contact Section ends here! -->
-
-  <!-- section contact -->
-  <section id="contact" class="section" itemprop="hasPart" itemscope itemtype="http://schema.org/ContactPage">
-    <meta itemprop="name" content="Contact Abid Ali">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>Stay Tuned</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-              Get in touched with us for the latest projects, offers, updates, reviews and for Hires.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span6">
-          <h4><i class="icon-envelope"></i><strong>Contact form</strong></h4>
-          <p>
-            Want to work with us or just want to say hello? We are here!
-          </p>
-          <!-- start contact form -->
-          <!-- Added action and method for Web3Forms -->
-          <form action="https://api.web3forms.com/submit" method="POST" role="form" class="contactForm" itemprop="hasPart" itemscope itemtype="http://schema.org/ContactForm">
-            <meta itemprop="name" content="Contact Form">
-            <input type="hidden" name="access_key" value="adbaaba9-48cc-4e76-bf08-b88b9319b855">
-            <input type="hidden" name="subject" value="New Form Submission from Abid Ali's Website">
-            <input type="hidden" name="from_name" value="Abid Ali Website">
-            <input type="checkbox" name="botcheck" style="display: none;">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <ul class="contact-list">
-              <li class="form-group">
-                <label for="name">Name <span>*</span></label>
-                <input type="text" name="name" class="form_input" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" itemprop="name" required />
-                <div class="validation"></div>
+<section id="intro" itemprop="mainContentOfPage">
+  <div class="slogan">
+    <div class="container"> <!-- Added container -->
+      <div class="row"> <!-- Added row -->
+        <div class="span12"> <!-- Use span12 for full width -->
+          <div class="icon">
+            <ul>
+              <li itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/let_s_talk.webp"> <!-- Replace with actual URL -->
+                <img src="./assets/img/let_s_talk.webp" alt="Abid Ali - Let's Talk" itemprop="contentUrl" style="width: 15%; margin: 0 auto; height: 10%; border-radius: 50%; display: block;"> <!-- Added display: block -->
               </li>
-              <li class="form-group">
-                <label for="email">Email <span>*</span></label>
-                <input type="email" class="form_input" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" itemprop="email" required />
-                <div class="validation"></div>
-              </li>
-              <li class="form-group">
-                <label for="subject">Subject <span>*</span></label>
-                <input type="text" class="form_input" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" itemprop="about" />
-                <div class="validation"></div>
-              </li>
-              <li class="form-group">
-                <label for="message">Your message <span>*</span></label>
-                <textarea class="form_textarea" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message" itemprop="message"></textarea>
-                <div class="validation"></div>
-              </li>
-              <li class="last">
-                <button class="btn btn-large btn-theme" type="submit" id="send">Send a message</button>
-              </li>
-            </ul>
-          </form>
-          <!-- end contact form -->
-        </div>
-        <div class="span6">
-          <h4><i class="fa fa-building-o"></i><strong>Our office</strong></h4>
-          <p>
-            We provide a lot of services; if you are looking for us, here you go!
-          </p>
-          <div class="dotted_line">
-          </div>
-          <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <strong itemprop="name">Abid Ali</strong><br>
-            <span itemprop="streetAddress">Wari Dir Upper</span>,<br>
-            <span itemprop="addressLocality">Khyber Pakhtunkhwa</span>,
-            <span itemprop="addressCountry">Pakistan</span>.
-          </p>
-          <p>
-            <span><i class="fa fa-phone"></i><strong>Phone:</strong> <span itemprop="telephone">+92 3484492955</span> or <span itemprop="telephone">+92 3102997911</span></span>
-          </p>
-          <p>
-            <span><i class="fa fa-skype"></i><strong>Skype Id:</strong> <span itemprop="knowsAbout">live:.cid.d246a89a24462a5b</span></span>
-          </p>
-          <p>
-            <span><i class="fa fa-envelope"></i><strong>Email:</strong> <span itemprop="email">abidali129418@gmail.com</span></span>
-          </p>
-          <div class="dotted_line">
-          </div>
-          <h4><i class="fa fa-users"></i><strong>Connect to our social profiles</strong></h4>
-          <div class="social-links">
-            <ul class="social-links">
-              <li><a href="https://x.com/pdfebooksw79272" title="Twitter" itemprop="url"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-              <li><a href="https://www.facebook.com/profile.php?id=61551367921508" title="Facebook" itemprop="url"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-              <li><a href="https://github.com/Abidd1" title="github" itemprop="url"><i class="fa fa-github-square fa-3x"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/abid-ali-b89794334/" title="Linkedin" itemprop="url"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
-              <li><a href="https://www.pinterest.com/pdfebooksworld" title="Pinterest" itemprop="url"><i class="fa fa-pinterest-square fa-3x"></i></a></li>
+              <br>
+              <li style="font-size: 2em; color: white; text-align: center;" itemprop="name">Abid Ali</li> <!-- Added text-align: center -->
             </ul>
           </div>
-          <div>
-            <!-- Google Maps Embed - Ensure API key is handled securely if on a live site -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.0175339473953!2d72.0378977!3d34.992405999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38db81072cf50d2b%3A0x9b1e1e83395672a1!2sAbid%20Ali!5e1!3m2!1sen!2s!4v1739525326343!5m2!1sen!2s" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end section contact -->
-
-  <footer>
-    <div class="card text-center">
-      <div class="card-header">
-        Abid Ali
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">
-          <div class="social-links">
-            <ul class="social-links">
-              <li><a href="https://x.com/pdfebooksw79272" title="Twitter" itemprop="url"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-              <li><a href="https://www.facebook.com/profile.php?id=61551367921508" title="Facebook" itemprop="url"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-              <li><a href="mailto: abidali129418@gmail.com" title="Email" itemprop="url"><i class="fa fa-envelope-square fa-3x"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/abid-ali-b89794334/" title="Linkedin" itemprop="url"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
-              <li><a href="https://x.com/AbidAli014" title="Pinterest" itemprop="url"><i class="fa fa-pinterest-square fa-3x"></i></a></li>
-            </ul>
-          </div>
-        </h5>
-        <p class="card-text">
-          <ul style="list-style: none; padding: 0;">
-            <li><a href="./index.html" itemprop="url">Home Page</a></li>
-            <li><a href="./about_Me.html" itemprop="url">Services</a></li>
-            <li><a href="./Clients.html" itemprop="url">Clients</a></li>
-            <li><a href="./about_Me.html" itemprop="url">Projects</a></li>
+          <h1 itemprop="headline" style="text-align: center;">An Expert <strong>WordPress | MERN Stack Developer</strong> and Designer</h1> <!-- Centered text -->
+          <h2 itemprop="alternativeHeadline" style="text-align: center;">Build to Brand Online!</h2> <!-- Centered text -->
+          <ul class="social-profile">
+            <!-- Use Font Awesome classes -->
+            <li><a href="https://www.facebook.com/profile.php?id=61551367921508" class="external" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square fa-3x icon-circled"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/abid-ali-b89794334/" class="external" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-3x icon-circled"></i></a></li>
+            <li><a href="https://github.com/Abidd1" class="external" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-square fa-3x icon-circled"></i></a></li>
+            <li><a href="https://x.com/AbidAli014" class="external" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square fa-3x icon-circled"></i></a></li>
+            <li><a href="https://www.pinterest.com/pdfebooksworld/?actingBusinessId=1128574125279979455" class="external" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest-square fa-3x icon-circled"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=923484492955&text&type=phone_number&app_absent=0" class="external" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-mobile fa-3x icon-circled"></i></a></li>
+            <li><a href="mailto:abidali129418@gmail.com" class="external" itemprop="url"><i class="fa fa-envelope-square fa-3x icon-circled"></i></a></li>
           </ul>
-        </p>
+          <br>
+          <div style="text-align: center;"> <!-- Centered search -->
+            <ul>
+              <li>
+                <label for="search" class="hidden-label">Search</label> <!-- Hidden label for accessibility -->
+                <input type="search" value="Search" id="search" style="color: rgb(0, 0, 7); width: 50%; text-align: center; border-radius: 5ch;" aria-label="Search website"> <!-- Added aria-label -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section" itemprop="about" itemscope itemtype="http://schema.org/AboutPage"> <!-- Changed to AboutPage for schema -->
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="heading">
+          <h3><span>About Me</span></h3>
+        </div>
         <br>
-        <a href="./Hire_Now.html" class="btn btn-primary" itemprop="url">Contact to Hire Now!</a>
-      </div>
-      <br>
-      <br>
-      <div class="card-footer text-body-secondary">
-        @Abid Ali all rights reserved ©copyright2025 Abid Ali
+        <br>
+        <div style="margin: 0 auto; max-width: 960px; text-align: center;"> <!-- Added text-align: center -->
+          <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/Abid_Ali_logo.jpg"> <!-- Replace with actual URL -->
+            <img src="./assets/img/Abid_Ali_logo.jpg" alt="Abid Ali's professional photo" itemprop="contentUrl" style="max-width: 300px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" /> <!-- Added styling and max-width for responsiveness -->
+            <meta itemprop="description" content="Abid Ali, expert WordPress & MERN Stack Developer and Designer">
+          </figure>
+        </div>
+        <div class="sub-heading">
+          <p itemprop="description">
+            I am a passionate WordPress and MERN Stack web <strong>Developer</strong> and <strong>Designer</strong> with a focus on building clean, efficient, and <strong>user-friendly</strong> web applications. I specialize in <strong>WordPress</strong> (Elementor) and <strong>MERN Stack</strong> (MongoDB, Express.js, React, React Native) with <strong>+2</strong> years of experience and have successfully completed <strong>10+</strong> projects and assignments. I enjoy tackling challenging projects that push my skills and am always eager to learn new technologies. I thrive on collaborating with clients worldwide to create innovative and impactful digital solutions. <span><a href="./about_Me.html">Learn more about my journey...</a></span>
+          </p>
+        </div>
       </div>
     </div>
+  </div>
+</section>
+<section id="education" class="section parallax dark" itemprop="hasPart" itemscope itemtype="http://schema.org/EducationalOccupationalProgram"> <!-- Changed to more specific schema -->
+  <meta itemprop="name" content="Abid Ali's Educational Background">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="heading">
+          <h3><span>Education</span></h3>
+        </div>
+        <div class="sub-heading">
+          <p>Here is a brief overview of my educational journey.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Item 1: School -->
+      <div class="span3"> <!-- Bootstrap span classes need to be adjusted for responsiveness -->
+        <div class="box aligncenter" itemprop="educationalCredentialAwarded" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>Shaheen Model School</strong></h4>
+            <i class="fa fa-graduation-cap fa-4x"></i>
+          </div>
+          <p itemprop="description">Passed matriculation exam in 2020 with grade A in Pre-medical stream.</p>
+          <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
+        </div>
+      </div>
+      <!-- Item 2: College -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="educationalCredentialAwarded" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>GC Wari Dir Upper</strong></h4>
+            <i class="fa fa-graduation-cap fa-4x"></i>
+          </div>
+          <p itemprop="description">Completed FSc (Pre-Medical) in 2022 with Grade A.</p>
+          <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
+        </div>
+      </div>
+      <!-- Item 3: Dev Education -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="educationalCredentialAwarded" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>SMIT Peshawar</strong></h4>
+            <i class="fa fa-code fa-4x"></i>
+          </div>
+          <p itemprop="description">Commenced WordPress and MERN Stack Development training in 2022.</p>
+          <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
+        </div>
+      </div>
+      <!-- Item 4: Others -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="award"> <!-- Use 'award' for courses/certifications -->
+          <div class="halftop">
+            <h4 itemprop="name"><strong>Certifications & Courses</strong></h4>
+            <i class="fa fa-briefcase fa-4x"></i>
+          </div>
+          <p itemprop="description">Completed courses in Blogging, SEO, Digital Marketing (DigiSkills.pk), and Graphics Designing (Learnonline.pk).</p>
+          <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills" class="section parallax dark" itemprop="hasPart" itemscope itemtype="http://schema.org/UserSkills">
+  <meta itemprop="name" content="Abid Ali's Skills & Expertise">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="heading">
+          <h3><span>Skills</span></h3>
+        </div>
+        <div class="sub-heading">
+          <p>Here are the key skills and technologies I leverage to deliver exceptional results.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Skill 1: MERN Stack -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="skill" itemscope itemtype="http://schema.org/SoftwareApplication">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>MERN Stack Development</strong></h4>
+            <i class="fa fa-laptop fa-4x"></i>
+          </div>
+          <p itemprop="description">Proficient in developing full-stack web applications using MongoDB, Express.js, React, and Node.js.</p>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>Expertise</span><span>89%</span>
+          </div>
+          <div style="width: 100%; background-color: #eee; border-radius: 5px;">
+            <div style="width: 89%; background-color: #007bff; height: 10px; border-radius: 5px;"></div>
+          </div>
+          <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
+        </div>
+      </div>
+      <!-- Skill 2: WordPress -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="skill" itemscope itemtype="http://schema.org/WebPage">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>WordPress Development & Design</strong></h4>
+            <i class="fa fa-wordpress fa-4x"></i>
+          </div>
+          <p itemprop="description">Experienced in building and customizing WordPress websites, including extensive use of Elementor for design.</p>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>Expertise</span><span>91%</span>
+          </div>
+          <div style="width: 100%; background-color: #eee; border-radius: 5px;">
+            <div style="width: 91%; background-color: #007bff; height: 10px; border-radius: 5px;"></div>
+          </div>
+          <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
+        </div>
+      </div>
+      <!-- Skill 3: App Developer -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="skill" itemscope itemtype="http://schema.org/MobileApplication">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>Mobile App Development</strong></h4>
+            <i class="fa fa-mobile fa-4x"></i>
+          </div>
+          <p itemprop="description">Skilled in developing user-friendly and visually appealing mobile applications with a focus on modern UI/UX principles.</p>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>Expertise</span><span>85%</span>
+          </div>
+          <div style="width: 100%; background-color: #eee; border-radius: 5px;">
+            <div style="width: 85%; background-color: #007bff; height: 10px; border-radius: 5px;"></div>
+          </div>
+          <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
+        </div>
+      </div>
+      <!-- Skill 4: Others -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="skill">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>Additional Skills</strong></h4>
+            <i class="fa fa-bullhorn fa-4x"></i>
+          </div>
+          <p itemprop="description">Proficient in Blogging, SEO, Graphics Designing, creating blog banners, and Social Media Marketing.</p>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>Expertise</span><span>89%</span>
+          </div>
+          <div style="width: 100%; background-color: #eee; border-radius: 5px;">
+            <div style="width: 89%; background-color: #007bff; height: 10px; border-radius: 5px;"></div>
+          </div>
+          <a href="./about_Me.html" class="btn btn-theme">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services" class="section parallax dark" itemprop="hasPart" itemscope itemtype="http://schema.org/Service">
+  <meta itemprop="name" content="Abid Ali's Web Development & Design Services">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="heading">
+          <h3><span>Our Services</span></h3>
+        </div>
+        <div class="sub-heading">
+          <p>We offer a comprehensive range of web development and design services tailored to your business needs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Service 1: WordPress -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="serviceType" itemscope itemtype="http://schema.org/WebDevelopment">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>WordPress Web Development</strong></h4>
+            <i class="fa fa-wordpress fa-4x"></i>
+          </div>
+          <p itemprop="description">Building modern, responsive websites using WordPress and Elementor, ensuring optimal performance and user experience.</p>
+          <a href="./Hire_Now.html" class="btn btn-theme">Get a Quote</a> <!-- Changed to Hire Now/Get a Quote -->
+        </div>
+      </div>
+      <!-- Service 2: Web from Scratch -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="serviceType" itemscope itemtype="http://schema.org/WebDevelopment">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>Custom Web Development</strong></h4>
+            <i class="fa fa-code fa-4x"></i>
+          </div>
+          <p itemprop="description">Crafting bespoke web solutions from scratch using MERN Stack (MongoDB, Express.js, React, Node.js) for dynamic applications.</p>
+          <a href="./Hire_Now.html" class="btn btn-theme">Get a Quote</a>
+        </div>
+      </div>
+      <!-- Service 3: Mobile App Dev -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="serviceType" itemscope itemtype="http://schema.org/MobileApplication">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>Mobile App Development</strong></h4>
+            <i class="fa fa-mobile fa-4x"></i>
+          </div>
+          <p itemprop="description">Developing intuitive and engaging mobile applications, ensuring a seamless experience across devices.</p>
+          <a href="./Hire_Now.html" class="btn btn-theme">Get a Quote</a>
+        </div>
+      </div>
+      <!-- Service 4: Others -->
+      <div class="span3">
+        <div class="box aligncenter" itemprop="serviceType">
+          <div class="halftop">
+            <h4 itemprop="name"><strong>Digital Services</strong></h4>
+            <i class="fa fa-briefcase fa-4x"></i>
+          </div>
+          <p itemprop="description">Offering additional services including SEO optimization, graphic design, content creation, and marketing strategy.</p>
+          <a href="./Hire_Now.html" class="btn btn-theme">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clients" class="section" itemprop="hasPart" itemscope itemtype="http://schema.org/UserReview"> <!-- Schema for testimonials -->
+  <div class="container">
+    <div class="heading">
+      <h3><span>Client Testimonials</span></h3>
+      <br>
+      <br>
+      <br>
+      <h5>Hear what our satisfied clients say about our work!</h5>
+      <br>
+      <br>
+    </div>
+    <div class="row"> <!-- Use Bootstrap rows/columns -->
+      <!-- Client 1 -->
+      <div class="span4"> <!-- Adjust span for responsiveness -->
+        <figure class="snip1390" itemprop="review" itemscope itemtype="http://schema.org/Review">
+          <img src="./assets/img/let_s_talk.webp" alt="Muhammad Ali's profile picture" class="profile" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+          <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/let_s_talk.webp"> <!-- Replace with actual URL -->
+          <figcaption>
+            <h2 itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Muhammad Ali</span></h2>
+            <h4 itemprop="jobTitle">CEO of pdfebooksworld.com</h4>
+            <blockquote itemprop="reviewBody">Working with Abid Ali was an absolute pleasure. They were highly skilled, communicative, and delivered exceptional results. Highly recommend! <a href="./Clients.html">Read more...</a></blockquote>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- Client 2 -->
+      <div class="span4">
+        <figure class="snip1390 hover" itemprop="review" itemscope itemtype="http://schema.org/Review">
+          <img src="./assets/img/S_tatheer.jpg" alt="Tatheer Hussain's profile picture" class="profile" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+          <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/S_tatheer.jpg"> <!-- Replace with actual URL -->
+          <figcaption>
+            <h2 itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Tatheer Hussain</span></h2>
+            <h4 itemprop="jobTitle">Dev Instructor at SMIT</h4>
+            <blockquote itemprop="reviewBody">Abid Ali is a valuable asset to any project. They demonstrated strong communication skills and delivered high-quality work consistently. <a href="./Clients.html">Read more...</a></blockquote>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- Client 3 -->
+      <div class="span4">
+        <figure class="snip1390" itemprop="review" itemscope itemtype="http://schema.org/Review">
+          <img src="./assets/img/Junaid.jpeg" alt="Junaid Khan's profile picture" class="profile" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+          <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/Junaid.jpeg"> <!-- Replace with actual URL -->
+          <figcaption>
+            <h2 itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Junaid Khan</span></h2>
+            <h4 itemprop="jobTitle">Co-founder of AI_Arch</h4>
+            <blockquote itemprop="reviewBody">Collaborating with Abid Ali was a fantastic experience. They were incredibly communicative, responsive, and exceeded expectations. <a href="./Clients.html">Read more...</a></blockquote>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+    <button style="color: white; background-color: rgb(91, 91, 255); border-radius: 4ch; width: 200px; height: 40px;">
+      <a href="./Clients.html" style="color: white; text-decoration: none;">View More Testimonials</a>
+    </button>
+  </div>
+</section>
+<section id="works" class="section gray-bg" itemprop="hasPart" itemscope itemtype="http://schema.org/ItemList">
+  <meta itemprop="name" content="Abid Ali's Portfolio - Recent Works">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="heading">
+          <h3><span>Recent Works</span></h3>
+        </div>
+        <div class="sub-heading">
+          <p>
+            Showcasing a selection of my recent projects across web development, design, and more. Explore my capabilities and the quality of my work.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="filter">
+        <li class="all active"><a href="#" class="btn btn-theme">All</a></li>
+        <li class="web"><a href="#" class="btn btn-theme">Web Development</a></li>
+        <li class="brand"><a href="#" class="btn btn-theme">Web Design</a></li>
+        <li class="graphic"><a href="#" class="btn btn-theme">Graphics Design</a></li>
+        <li class="seo"><a href="#" class="btn btn-theme">Blogs & SEO</a></li> <!-- Changed type to 'seo' -->
+      </ul>
+      <div class="clear"></div>
+      <div class="row">
+        <ul class="portfolio-area da-thumbs">
+          <!-- Project 1: Educational Website -->
+          <li class="portfolio-item" data-id="id-0" data-type="web" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebSite">
+            <div class="span3"> <!-- Responsive adjustment -->
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="assets/img/Educational_Website.jpeg" alt="Educational Website Project - MERN Stack" title="Educational Website Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/Educational_Website.jpeg"> <!-- Replace -->
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <h5 itemprop="name"><strong>Education Website</strong></h5>
+                    <p itemprop="description">A fully responsive educational platform.</p> <!-- Added description -->
+                    <a href="https://pdfebooksworld.com" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-link fa-3x"></i></a>
+                    <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/Educational_Website.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
+                      <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/Educational_Website.jpeg"> <!-- Replace -->
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Project 2: E-commerce Site -->
+          <li class="portfolio-item" data-id="id-1" data-type="web" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebSite">
+            <div class="span3">
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="assets/img/E-commerce_website.jpeg" alt="E-commerce Website Project - React" title="E-commerce Website Project" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/E-commerce_website.jpeg"> <!-- Replace -->
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <h5 itemprop="name"><strong>E-commerce Site</strong></h5>
+                    <p itemprop="description">Modern e-commerce platform built with React.</p>
+                    <a href="https://codevoyagers.vercel.app/" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-link fa-3x"></i></a>
+                    <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/E-commerce_website.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
+                      <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/E-commerce_website.jpeg"> <!-- Replace -->
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Project 3: Graphics Design (E-commerce) -->
+          <li class="portfolio-item" data-id="id-2" data-type="graphic" itemprop="itemListElement" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="span3">
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="assets/img/E-commerce_graphics.jpg" alt="E-commerce Graphics Design" title="E-commerce Graphics Design" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/E-commerce_graphics.jpg"> <!-- Replace -->
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <h5 itemprop="name"><strong>Graphics Design (E-commerce)</strong></h5>
+                    <p itemprop="description">Custom graphics for e-commerce branding.</p>
+                    <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
+                    <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/E-commerce_graphics.jpg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
+                      <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/E-commerce_graphics.jpg"> <!-- Replace -->
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Project 4: Web Page Design (Tour Booking) -->
+          <li class="portfolio-item" data-id="id-3" data-type="brand" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebPage">
+            <div class="span3">
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="assets/img/tour_booking.jpeg" alt="Tour Booking Web Page Design" title="Tour Booking Web Page Design" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/tour_booking.jpeg"> <!-- Replace -->
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <h5 itemprop="name"><strong>Web Page Design (Tour Booking)</strong></h5>
+                    <p itemprop="description">User-friendly interface for tour bookings.</p>
+                    <a href="https://visa-consultancy-murex.vercel.app/" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-link fa-3x"></i></a>
+                    <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/tour_booking.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
+                      <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/tour_booking.jpeg"> <!-- Replace -->
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Project 5: Graphics Design (E-commerce Banner) -->
+          <li class="portfolio-item" data-id="id-4" data-type="graphic" itemprop="itemListElement" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="span3">
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="assets/img/Graphics_ecomerce.jpeg" alt="E-commerce Banner Graphics Design" title="E-commerce Banner Graphics Design" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/Graphics_ecomerce.jpeg"> <!-- Replace -->
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <h5 itemprop="name"><strong>Graphic Design (E-commerce Banner)</strong></h5>
+                    <p itemprop="description">Eye-catching banners for e-commerce promotions.</p>
+                    <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
+                    <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/Graphics_ecomerce.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
+                      <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/Graphics_ecomerce.jpeg"> <!-- Replace -->
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Project 6: Web Design (Art Gallery) -->
+          <li class="portfolio-item" data-id="id-5" data-type="brand" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebPage">
+            <div class="span3">
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="assets/img/Art_gallery.jpeg" alt="Art Gallery Web Design" title="Art Gallery Web Design" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/Art_gallery.jpeg"> <!-- Replace -->
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <h5 itemprop="name"><strong>Web Design (Art Gallery)</strong></h5>
+                    <p itemprop="description">Elegant web design for an art gallery.</p>
+                    <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
+                    <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/Art_gallery.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
+                      <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/Art_gallery.jpeg"> <!-- Replace -->
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Project 7: Web Page Design (Tech Page) -->
+          <li class="portfolio-item" data-id="id-6" data-type="web" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebPage">
+            <div class="span3">
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="assets/img/tech_page.jpeg" alt="Tech Page Web Design" title="Tech Page Web Design" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/tech_page.jpeg"> <!-- Replace -->
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <h5 itemprop="name"><strong>Web Page Design (Tech Page)</strong></h5>
+                    <p itemprop="description">Informative web page for a tech company.</p>
+                    <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
+                    <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/tech_page.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
+                      <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/tech_page.jpeg"> <!-- Replace -->
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Project 8: Web Page Design (Tour Booking Site) -->
+          <li class="portfolio-item" data-id="id-7" data-type="web" itemprop="itemListElement" itemscope itemtype="http://schema.org/WebPage">
+            <div class="span3">
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="assets/img/tour_booking_site.jpeg" alt="Tour Booking Site - UI/UX Design" title="Tour Booking Site - UI/UX Design" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/tour_booking_site.jpeg"> <!-- Replace -->
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <h5 itemprop="name"><strong>Web Page Design (Tour Booking Site)</strong></h5>
+                    <p itemprop="description">Comprehensive design for a tour booking platform.</p>
+                    <a href="#" itemprop="url"><i class="fa fa-link fa-3x"></i></a>
+                    <span itemprop="screenshot" itemscope itemtype="http://schema.org/ImageObject">
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/tour_booking_site.jpeg" itemprop="url"> <i class="fa fa-search-plus fa-3x"></i> </a>
+                      <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/tour_booking_site.jpeg"> <!-- Replace -->
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact-promo" class="section" style="background-color: rgb(219, 235, 250); padding: 40px 0;"> <!-- Added padding -->
+  <div class="container"> <!-- Use container -->
+    <div class="row">
+      <div class="span6" style="text-align: center;"> <!-- Centered content -->
+        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+          <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/talk_about_project.jpg"> <!-- Replace -->
+          <img style="width: 55%; height: auto; border-radius: 50%; max-width: 250px;" src="./assets/img/talk_about_project.jpg" alt="Abid Ali - Discuss Your Project" itemprop="contentUrl" />
+          <meta itemprop="description" content="Let's discuss your project and bring your vision to life.">
+        </figure>
+      </div>
+      <div class="span6" style="text-align: center;"> <!-- Centered content -->
+        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+          <meta itemprop="url" content="https://www.yourwebsite.com/assets/img/let_s_talk.webp"> <!-- Replace -->
+          <img style="width: 55%; height: auto; border-radius: 50%; max-width: 250px; background-color: rgb(255, 255, 79);" src="./assets/img/let's_talk.webp" alt="Abid Ali - Ready to Connect" itemprop="contentUrl" />
+          <meta itemprop="description" content="Abid Ali is ready to connect and discuss your project needs.">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section" itemprop="hasPart" itemscope itemtype="http://schema.org/ContactPage">
+  <meta itemprop="name" content="Contact Abid Ali - Get In Touch">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="heading">
+          <h3><span>Contact Us</span></h3> <!-- Changed title -->
+        </div>
+        <div class="sub-heading">
+          <p>
+            Connect with me for inquiries, collaborations, or to discuss your next project. I'm eager to hear from you!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span6">
+        <h4><i class="icon-envelope"></i><strong>Contact Form</strong></h4>
+        <p>Feel free to reach out using the form below. I aim to respond promptly.</p>
+        <!-- start contact form -->
+        <form action="https://api.web3forms.com/submit" method="POST" role="form" class="contactForm" itemprop="hasPart" itemscope itemtype="http://schema.org/ContactForm">
+          <meta itemprop="name" content="Contact Abid Ali Form">
+          <input type="hidden" name="access_key" value="adbaaba9-48cc-4e76-bf08-b88b9319b855">
+          <input type="hidden" name="subject" value="New Contact Form Submission from Abid Ali's Website">
+          <input type="hidden" name="from_name" value="Abid Ali Website">
+          <input type="checkbox" name="botcheck" style="display: none;">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <ul class="contact-list">
+            <li class="form-group">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" name="name" class="form_input" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" itemprop="name" required />
+              <div class="validation"></div>
+            </li>
+            <li class="form-group">
+              <label for="email">Email <span>*</span></label>
+              <input type="email" class="form_input" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" itemprop="email" required />
+              <div class="validation"></div>
+            </li>
+            <li class="form-group">
+              <label for="subject">Subject</label> <!-- Subject is not strictly required by web3forms, but good to keep -->
+              <input type="text" class="form_input" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject" itemprop="about" />
+              <div class="validation"></div>
+            </li>
+            <li class="form-group">
+              <label for="message">Your Message <span>*</span></label>
+              <textarea class="form_textarea" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message" itemprop="message"></textarea>
+              <div class="validation"></div>
+            </li>
+            <li class="last">
+              <button class="btn btn-large btn-theme" type="submit" id="send">Send Message</button>
+            </li>
+          </ul>
+        </form>
+        <!-- end contact form -->
+      </div>
+      <div class="span6">
+        <h4><i class="fa fa-building-o"></i><strong>Connect With Me</strong></h4> <!-- Changed title -->
+        <p>Find me online and connect through various platforms.</p>
+        <div class="dotted_line"></div>
+        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <strong itemprop="name">Abid Ali</strong><br>
+          <span itemprop="streetAddress">Wari, Dir Upper</span>,<br>
+          <span itemprop="addressLocality">Khyber Pakhtunkhwa</span>,
+          <span itemprop="addressCountry">Pakistan</span>.
+        </p>
+        <p>
+          <span><i class="fa fa-phone"></i><strong> Phone:</strong> <span itemprop="telephone">+92 3484492955</span></span>
+        </p>
+        <p>
+          <span><i class="fa fa-envelope"></i><strong> Email:</strong> <span itemprop="email">abidali129418@gmail.com</span></span>
+        </p>
+        <div class="dotted_line"></div>
+        <h4><i class="fa fa-users"></i><strong>Social Profiles</strong></h4>
+        <div class="social-links">
+          <ul class="social-links">
+            <li><a href="https://x.com/AbidAli014" title="Twitter" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61551367921508" title="Facebook" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+            <li><a href="https://github.com/Abidd1" title="GitHub" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-square fa-3x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/abid-ali-b89794334/" title="LinkedIn" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+            <li><a href="https://www.pinterest.com/pdfebooksworld" title="Pinterest" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest-square fa-3x"></i></a></li>
+            <li><a href="mailto:abidali129418@gmail.com" title="Email" itemprop="url"><i class="fa fa-envelope-square fa-3x"></i></a></li> <!-- Email link again -->
+          </ul>
+        </div>
+        <!-- Google Maps Embed -->
+        <div class="map-container" style="margin-top: 20px;"> <!-- Added container for map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.0175339473953!2d72.0378977!3d34.992405999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38db81072cf50d2b%3A0x9b1e1e83395672a1!2sAbid%20Ali!5e1!3m2!1sen!2s!4v1739525326343!5m2!1sen!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="card text-center">
+    <div class="card-header">
+      Abid Ali - Web Developer & Designer
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">
+        <div class="social-links">
+          <ul class="social-links">
+            <li><a href="https://x.com/AbidAli014" title="Twitter" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61551367921508" title="Facebook" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+            <li><a href="mailto:abidali129418@gmail.com" title="Email" itemprop="url"><i class="fa fa-envelope-square fa-3x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/abid-ali-b89794334/" title="LinkedIn" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+            <li><a href="https://x.com/pdfebooksw79272" title="Pinterest" itemprop="url" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest-square fa-3x"></i></a></li>
+          </ul>
+        </div>
+      </h5>
+      <p class="card-text">
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" itemprop="url">Home</a></li>
+          <li><a href="./about_Me.html" itemprop="url">About Me</a></li> <!-- Clarified link -->
+          <li><a href="./Clients.html" itemprop="url">Clients</a></li>
+          <li><a href="./Works.html" itemprop="url">Portfolio</a></li> <!-- Clarified link -->
+          <li><a href="./Hire_Now.html" itemprop="url">Hire Me</a></li> <!-- Added Hire Me -->
+        </ul>
+      </p>
+      <br>
+      <a href="./Hire_Now.html" class="btn btn-primary" itemprop="url">Contact to Hire Now!</a>
+    </div>
     <br>
-    <br>
-  </footer>
-  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
-
-  
-</body>
-<script defer src="app.js"></script>
-
-  <!-- Javascript Library Files -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.easing.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/parallax/jquery.parallax-1.1.3.js"></script>
-  <script src="assets/js/nagging-menu.js"></script>
-  <script src="assets/js/jquery.nav.js"></script>
-  <script src="assets/js/prettyPhoto/jquery.prettyPhoto.js"></script>
-  <script src="assets/js/portfolio/jquery.quicksand.js"></script>
-  <script src="assets/js/portfolio/setting.js"></script>
-  <script src="assets/js/hover/jquery-hover-effect.js"></script>
-  <script src="assets/js/jquery.scrollTo.min.js"></script>
-  <script src="assets/js/animate.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Custom Javascript File -->
-  <script src="assets/js/custom.js"></script>
-
-</html>
+    <div class="card-footer text-body-secondary">
+      © Copyright 2025 Abid Ali. All Rights Reserved.
+    </div>
+  </div>
+  <br>
+  <br>
+</footer>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
