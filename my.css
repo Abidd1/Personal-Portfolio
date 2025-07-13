@@ -1,76 +1,48 @@
-/* .supper{
-        width: 100%;
-        background-image: url(./assets/img/Newyear_1.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        height: 80vh;
-        margin: 100px 0;
-} */
-.supper1a{
+/* This section appears to be targeting specific background images. */
+.supper1a,
+.supper2a {
   width: 100%;
-  background-image: url(./assets/img/newYear_Deal.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 60vh;
-}
-.supper2a{
-  width: 100%;
-  background-image: url(./assets/img/newYear_Deal_1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 60vh;
+  background-attachment: fixed; /* Can be performance-intensive on mobile, consider alternatives if issues arise */
+  height: 60vh; /* Responsive height */
 }
 
-/*  Somethings New  */
-.supper1 {
-        display: flex; /* Enable Flexbox */
-        flex-wrap: wrap; /* Allow items to wrap onto the next line on smaller screens */
-        justify-content: space-between; /* Distribute space evenly between items */
-        margin: 1%;
-        padding: 1%;
-      }
-      
-      .item {
-        flex: 1; /* Each item takes up equal space */
-        padding: 20px;
-        box-sizing: border-box; /* Include padding in width calculation */
-        text-align: center;
-        border: 1px solid #ccc;
-        height: 800px;
-        border-radius: 3ch;
-        box-shadow: black;
-      }
-      
-      /* Media query for smaller screens */
-      @media (max-width: 768px) {
-        .item {
-          flex: 1 1 100%; /* Each item takes full width on smaller screens */
-          margin-bottom: 10px; /* Add some space between stacked items */
-        }
-      }
-      /* another things and Font Awesome customisation */
-      .fa-wordpress-simple{
-        width: 100px;
-        height: 20px;
-      }
+/* General responsiveness for images in content */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Prevents extra space below images */
+}
 
-      /* //////////////////////////////////////////// */
-      /* /////////// My CSS session 2 */
-      @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+/* Ensure Bootstrap containers are used for responsiveness */
+.container {
+  width: 90%; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Media Queries for layout adjustments */
+@media (min-width: 768px) { /* For tablets and desktops */
+  .container {
+    width: 75%; /* Wider for larger screens */
+  }
+}
+
+@media (min-width: 992px) { /* For desktops */
+  .container {
+    width: 960px; /* Fixed width for common desktop layouts */
+  }
+}
+
+/* Custom CSS for testimonial cards */
 figure.snip1390 {
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 10px;
+  margin: 10px auto; /* Center the figures */
   min-width: 230px;
-  max-width: 315px;
+  max-width: 315px; /* Keep figures within a reasonable width */
   width: 100%;
   color: #000000;
   text-align: center;
@@ -78,55 +50,9 @@ figure.snip1390 {
   background-color: #2C3447;
   padding: 30px;
   background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-figure.snip1390 *,
-figure.snip1390 *:before,
-figure.snip1390 *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-figure.snip1390 figcaption {
-  width: 100%;
-}
-figure.snip1390 h2,
-figure.snip1390 h4,
-figure.snip1390 blockquote {
-  margin: 0;
-}
-figure.snip1390 h2,
-figure.snip1390 h4 {
-  font-weight: 300;
-}
-figure.snip1390 h2 {
-  color: #ffffff;
-}
-figure.snip1390 h4 {
-  color: #a6a6a6;
-}
-figure.snip1390 blockquote {
-  font-size: 1em;
-  padding: 45px 20px 40px 50px;
-  margin-top: 30px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
-  text-align: left;
-  position: relative;
-}
-figure.snip1390 blockquote:before {
-  font-family: 'FontAwesome';
-  content: "\201C";
-  position: absolute;
-  font-size: 70px;
-  opacity: 0.25;
-  font-style: normal;
-  top: 0px;
-  left: 20px;
-}
+
 figure.snip1390 .profile {
   width: 100px;
   border-radius: 50%;
@@ -135,79 +61,133 @@ figure.snip1390 .profile {
   margin-bottom: 10px;
   border: solid 5px #A6A57A;
 }
-/* Achievement Seciton customisation start from here  */
-.Achieved1{
+
+/* Media Query for testimonial cards */
+@media (max-width: 768px) {
+  /* Adjust testimonial layout for smaller screens */
+  #clients .span4 { /* Targeting the Bootstrap span class */
+    width: 90%; /* Make them take almost full width */
+    margin: 10px auto; /* Center them */
+  }
+}
+
+/* Achievement Section customisation */
+.Achieved1 {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items */
 }
 
-.div1{
-  width: 400px; 
-  border: #2C3447;
-  height: 400px;
+.div1, .div2, .div3, .div4, .div5, .div6 {
   background-color: #2C3447;
-  margin: 2px;
-  padding: 2px;
+  margin: 10px; /* Consistent margin */
+  padding: 15px; /* Consistent padding */
   border-radius: 4ch;
-  margin-left: 2%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  text-align: center;
 }
 
-.div2{
-  width: 500px; 
-  height: 450px;
-  background-color: #2C3447;
-  margin: 2px;
-  padding: 2px;
-  border-radius: 4ch;
-  margin-left: 1%;
+/* Responsive adjustments for achievement divs */
+.div1 { width: 300px; height: auto; } /* Auto height */
+.div2 { width: 300px; height: auto; }
+.div3 { width: 300px; height: auto; }
+.div3 img { width: 100%; height: auto; border-radius: 4ch;} /* Responsive image within div3 */
+.div4 { width: 300px; height: auto; }
+.div5 { width: 300px; height: auto; }
+.div6 { width: 300px; height: auto; }
+
+@media (max-width: 768px) {
+  .div1, .div2, .div3, .div4, .div5, .div6 {
+    width: 90%; /* Take full width on smaller screens */
+  }
 }
 
-.div3{
-  width: 350px; 
-  height: 400px;
-  background-color: #2C3447;
-  margin: 2px;
-  padding: 2px;
-  border-radius: 4ch;
-  margin-left: 1%;
+/* Other CSS */
+.fa-wordpress-simple { /* This class is not used in the HTML, but if you add it, style it */
+  width: 100px;
+  height: 20px;
 }
 
-.div3 > img{
-  height: 400px;
-  border-radius: 4ch;
-}
-.div4{
-  width: 400px; 
-  height: 400px;
-  background-color: #2C3447;
-  margin: 2px;
-  padding: 2px;
-  border-radius: 3ch;
-  margin-left: 1%;
+/* Additional Responsive Fixes */
+.navbar-fixed-top { /* Ensure fixed header doesn't overlap content */
+  z-index: 1000; /* Make sure it's on top */
 }
 
-.div5{
-  width: 450px; 
-  height: 450px;
-  background-color: #2C3447;
-  margin: 2px;
-  padding: 2px;
-  border-radius: 3ch;
-  margin-left: 1%;
+/* Add padding to the body to account for fixed header */
+body {
+  padding-top: 60px; /* Adjust this value based on your header height */
 }
 
-.div6{
-  width: 400px; 
-  height: 400px;
-  background-color: #2C3447;
-  margin: 2px;
-  padding: 2px;
-  border-radius: 3ch;
-  margin-left: 1%;
-  margin-right: 1%;
+/* Responsive video/iframe */
+.map-container iframe {
+    width: 100% !important;
+    height: 350px; /* Set a default height */
 }
-/* Achievment Section //Ends Here! */
 
-/* Hire Me Section Start from here! */
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
 
-/* Hire Me Section //Ends Here */
+/* Ensure footer content is readable */
+footer .card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .card-body li {
+  margin-bottom: 10px;
+}
+
+footer .card-body li a {
+  color: #333; /* Adjust color */
+  text-decoration: none;
+}
+
+footer .card-body li a:hover {
+  color: #007bff; /* Add hover effect */
+}
+
+/* Hide the initial "Search" value in the input if desired, but keep the placeholder */
+input[type="search"][value="Search"] {
+  color: #aaa; /* Lighter color for default value */
+}
+
+/* Basic responsive adjustments for Bootstrap 2.x */
+.row > [class*="span"] {
+    float: left; /* Ensure spans are block elements */
+    margin-left: 2.6%; /* Example margin, adjust based on Bootstrap grid */
+}
+
+.row > [class*="span"]:first-child {
+    margin-left: 0;
+}
+
+/* Clearfix for rows */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* For spans, define width */
+.span12 { width: 100%; }
+.span6 { width: 48%; margin-left: 2%; } /* Bootstrap 2.x span widths */
+.span4 { width: 30.666%; margin-left: 2%; }
+.span3 { width: 23%; margin-left: 2%; }
+/* Add other span classes if used */
+
+/* Add these to ensure your fixed header doesn't hide content when scrolling */
+section {
+    padding-top: 80px; /* Add some top padding to sections to prevent content hiding behind fixed header */
+    margin-top: -80px; /* Negative margin to pull content up */
+}
+section:first-of-type { /* Adjust first section's padding */
+    padding-top: 100px;
+    margin-top: -100px;
+}
+#topnav {
+    padding-top: 10px; /* Add some padding inside the header */
+}
