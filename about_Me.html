@@ -1,375 +1,390 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <head>
-        <meta charset="utf-8">
-        <title> Abid | About Me</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <!-- styles -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet" />
-        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
-        <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
-        <link href="assets/css/animate.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700" rel="stylesheet" />
-      
-        <link href="assets/css/style.css" rel="stylesheet" />
-        <link href="assets/color/default.css" rel="stylesheet" />
-      
-        <link rel="stylesheet" href="my.css">
-        <link rel="stylesheet" href="About_Me.css">
+// src/pages/About.js (or a similar React component)
+
+import React, { useEffect } from 'react';
+import Head from 'next/head'; // Or import Helmet from 'react-helmet' if not using Next.js
+
+// Assume these CSS imports are handled by your build system (e.g., Webpack, Vite)
+// import 'assets/css/bootstrap.css';
+// import 'assets/css/bootstrap-responsive.css';
+// import 'assets/css/prettyPhoto.css';
+// import 'assets/css/animate.css';
+// import 'assets/css/style.css';
+// import 'assets/color/default.css';
+// import 'my.css'; // Assuming this is a general utility CSS
+// import 'About_Me.css'; // Specific styles for this page
+// import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'; // Example link
+// import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'; // Example link
+
+// Assume you have a custom component for the header and footer
+// import Header from '../components/Header';
+// import Footer from '../components/Footer';
+
+// Assume you have utility JS functions or a main app script
+// import '../app.js'; 
+
+function About() {
+  // Define the schema markup object
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abid Ali",
+    "url": "https://yourdomain.com", // Replace with your actual domain
+    "image": "https://yourdomain.com/assets/img/abid-ali-profile.webp", // Ensure this path is correct
+    "description": "Professional WordPress & MERN Stack Developer with 2+ years of experience.",
+    "jobTitle": "WordPress | MERN Stack Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wari Dir Upper",
+      "addressRegion": "Khyber Pakhtunkhwa",
+      "addressCountry": "Pakistan"
+    },
+    "email": "mailto:abidali129418@gmail.com",
+    "telephone": "+923484492955",
+    "sameAs": [
+      "https://www.linkedin.com/in/abid-ali-b89794334/",
+      "https://github.com/Abidd1",
+      "https://x.com/AbidAli014",
+      "https://www.facebook.com/profile.php?id=61551367921508"
+    ],
+    "knowsLanguage": [
+      {"@type": "Language", "name": "English", "alternateName": "en"},
+      {"@type": "Language", "name": "Urdu", "alternateName": "ur"}
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Web Developer",
+      "estimatedSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": {
+          "@type": "QuantitativeValue",
+          "minValue": 500,
+          "maxValue": 5000,
+          "unitText": "MONTH"
+        }
+      }
+    }
+  };
+
+  // useEffect to add the schema to the document head, especially useful for dynamic content
+  // In SSR/SSG frameworks like Next.js with `next/head`, this is handled automatically.
+  // If you are in a pure CRA environment, you might do something like this.
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.innerHTML = JSON.stringify(personSchema);
+    document.head.appendChild(script);
+
+    // Cleanup function
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, [personSchema]); // Re-run if schema data changes
+
+  return (
+    <div>
+      {/* Use your Head management system for meta tags and title */}
+      {/* For Next.js */}
+      <Head>
+        <title>Abid Ali - About Me | WordPress & MERN Stack Developer</title>
+        <meta name="description" content="Learn more about Abid Ali, a professional WordPress and MERN Stack Developer from Pakistan, with expertise in web design, development, SEO, and blogging." />
         
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
-        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
-        <link rel="shortcut icon" href="./assets/img/A..jpg" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        {/* This is how you'd add the schema markup in Next.js */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+          key="person-schema" // Unique key for React reconciliation
+        />
+        
+        {/* Link to critical CSS if not handled by a global layout */}
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/style.min.css" />
+        <link rel="stylesheet" href="/assets/color/default.min.css" />
+        <link rel="stylesheet" href="/assets/css/About_Me.css" /> {/* Specific CSS */}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> {/* Latest Font Awesome */}
+        
+        {/* Other head elements like favicons */}
+      </Head>
 
-      
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
-        <!-- =======================================================
-          Theme Name: Abid Ali
-          Theme URL: https://github.com/Abidd1
-          Author: Abid Ali
-          Author URL: https://github.com/Abidd1
-          ======================================================= -->
-      </head>
-</head>
-<body>
-    <header style="max-width: 100%;">
-        <!-- start top -->
-        <div style="height: 60px;" id="topnav" class="navbar navbar-fixed-top default">
-          <div class="navbar-inner">
-            <div class="navigation">
-              <nav>
-                <ul style="width: 100px; height: 0px;">
-                  <li> <img src="./assets/img/Abid_Ali_12-removebg-preview.png" alt=""></li>
-                </ul>
-                <ul class="nav pull-right">
-                  <li><a href="./index.html" class="external">Home</a></li>
-                  <li><a href="#" class="current">About</a></li>
-                  <li><a href="./Clients.html" class="external"> Clients </a></li>
-                  <li><a href="./Works.html" class="external"> Works </a></li>
-                  <li><a href="./Achievments.html" class="external">Achievments</a></li>
-                    <li><a href="./Hire_Now.html" class="external">Hire Now</a></li>
-                    <li><a  href="https://drive.google.com/file/d/1IvkI7Tjxlu9qlGvvdVaODE2YdPJ72FnD/view?usp=sharing" style="border: 2px solid blue; border-radius: 4ch; width: 100px; text-align: center;" class="external"> Download CV </a></li>
-                  </li>
-                </ul>
-              </nav>
+      {/* <Header />  */} {/* Your custom Header Component */}
+
+      <main id="main-content"> {/* Assuming main content starts here */}
+        
+        {/* Hero Section for About Page */}
+        <section id="about-hero" className="hero-section about-hero-bg">
+            <div className="container">
+                <h1 className="page-title">About Me</h1>
+                <p className="breadcrumb-nav">
+                    <a href="/">Home</a> > <span>About Me</span>
+                </p>
             </div>
-            <!--/.nav-collapse -->
-          </div> 
-          </div>
-        </div>
-        <!-- end top -->
-      </header>
-      <!-- //Header Section Ends Here -->
-       <!-- About Me section Starts Here! -->
-       <section style="background-image: url(./assets/img/Background_image.jpg); width: 100%; height: 400px;">
-        <Div style=" margin-top: 10%; margin-left: 2%;">
-            <h1 style="color: white; font-size: 4em; font-weight: bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">About Me</h1>
-        </Div>
-        <div>
-            <img style="width: 40%; height: 500px; border-radius: 50%; float: right; background-color: rgb(167, 255, 96); margin-right: 2%;" src="./assets/img/let's_talk.webp" alt="">
-        </div>
-       </section>
-       <!-- About Me Section Two Starts from Here! -->
-        <section>
-            <div style="margin-left: 2%;">
-                <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 4em;"> I'm Abid Ali</h2>
-                <h3>Developer and Designer</h3>
-                <br>
-                <p>
-                    <strong>I'm</strong> a passionate WordPress and MERN Stack web <strong>Developer</strong> and <strong>Designer</strong> with a focus on building clean, efficient, and <strong>user-friendly</strong> web applications. I specialize in <strong>WordPress</strong> (Elementer) <strong> MERN Stack </strong> (Mongo DB, Express, React, Native) with <strong>+2 </strong> year of expirience and completed <strong>10+</strong> projects and Assignments. enjoy tackling challenging projects that push my skills. I'm always eager to learn new technologies and collaborate with others to create innovative solutions.</span>
-                    Furthermore, I have a command on <strong>Blogging</strong>, Graphics Designing, Social Media Marketting, and Search Engine Optimisation (SEO). Officially <strong>+15 blogs</strong> of mine has been published by <a href="https://pdfebooksworld.com">pdfebooksworld.com</a> and <strong> upto 20 blogs banners</strong> and Graphics was a real time experience and Contribution in field of Blogging, SEO, and Graphics Designing.
-                  </p> <br>
-                  <h3><strong>Personal Information</strong></h3> <br>
-                  <h4> Birthday:  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; 03/02/2002</h4>
-                  <h4> Age: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;23 Years</h4>
-                  <h4> Nationality: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; Pakistan</h4>
-                  <h4> Gender: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; Male</h4>
-                  <br>
-                  <br>
-                  <h3 id="education"><strong>Education</strong></h3> <br>
-                  <h4> School:  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; Shaheen Model High School Wari</h4>
-                  <h4> College: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;GC Wari Dir Upper</h4>
-                  <h4> WordPress: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; Digiskills.pk</h4>
-                  <h4> MERN Stack : &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; S.M.I.T Peshawar</h4>
-                  <h4> Front-end : &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; S.M.I.T Peshawar</h4>
-                  <h4> SEO: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;  &nbsp; learnonline.pk (Online)</h4>
-                  <h4> Blogging : &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;  &nbsp; Digiskills.pk (Online)</h4>
-                  <h4> Graphics Designing : &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; Digiskills.pk (Online)</h4>
-                  <h4> Digital Literacy: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; Digiskills.pk (Online)</h4>
-                  <br>
-                  <br>
-                  <h3><strong>Contact Information</strong></h3> <br>
-                  <h4> Permanent Address:  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; Wari Dir Upper</h4>
-                  <h4> Current Address: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; University Town, Peshawar</h4>
-                  <h4> Mobile: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp; +92 3484492955</h4>
-                  <h4> Email: &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; abidali129418@gmail.com</h4>
-                  <p style="margin-right: 3%; margin-left: 2%;">We Provided all the things about our education, but in sort of school and College our field of studying was a Pre-medical, Graduated with A <sup>+</sup> grade and 81% of C-marks. Afterthat, we dive into the field of Computer Science and have 4<sup>th</sup> year of onging journey. </p>
-                  
-                </div>
         </section>
-        <!-- My services Section start from Here! -->
-         <section style="background-color: rgb(224, 241, 255);">
-          <div style="text-align: center;">
-            <h1><strong>My Skills and Services</strong></h1>
-            <h3 style="margin-left: 1%; margin-right: 1%;">
-              Here is the combinition of all my skills and services, take a look it up!
-            </h3>
-          </div>
-          <br>
-          <br>
-          <div class="supper1">
-            <div class="item" style="background-color: rgb(255, 255, 255); margin: 5px;" id="item1">
-              <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 3em; font-weight: bolder; float: left;">01.</h2>
-              <i class="fa-brands fa-wordpress-simple" style="font-size: 6em; margin-top: 10%;"></i>
-              <br>
-              <h2><strong>WordPress Web Developer</strong></h2>
-              <p>We provides a WordPress web building services, Build your dream Website through WordPress with cheap prices and lesser time. From CMS to plugins, themes, all are covered with an extraordinary design!</p>
-              <h2 style="float: left;"> WP Elementer   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 92% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 6ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Themes  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 83%</h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Plugins &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 81% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <a href="./Hire_Now.html" class="btn btn-primary btn-large e_pulse">Contact Us Now!</a> 
+
+        {/* About Me Content Section */}
+        <section id="about-content" className="section">
+            <div className="container">
+                <div className="row about-details">
+                    <div className="col-md-4 about-image-col">
+                        {/* Image with width, height, alt, and loading for CLS prevention */}
+                        <img 
+                            src="/assets/img/abid-ali-about.webp" // Updated path
+                            alt="Abid Ali - WordPress & MERN Stack Developer"
+                            width="400" // Example width
+                            height="400" // Example height
+                            loading="lazy" // Lazy load if not critical for initial view
+                            className="img-fluid rounded-circle profile-image-about"
+                        />
+                    </div>
+                    <div className="col-md-8 about-text-col">
+                        <h2>I'm Abid Ali</h2>
+                        <h3 className="subtitle">WordPress & MERN Stack Developer | Designer</h3>
+                        <p className="lead">
+                            I'm a passionate WordPress and MERN Stack web <strong>Developer</strong> and <strong>Designer</strong> with a focus on building clean, efficient, and <strong>user-friendly</strong> web applications. I specialize in <strong>WordPress</strong> (Elementor) and <strong>MERN Stack</strong> (MongoDB, Express, React, Node.js) with over <strong>2 years</strong> of experience, having successfully completed <strong>10+ projects</strong> and assignments. I enjoy tackling challenging projects that push my skills and am always eager to learn new technologies and collaborate with others to create innovative solutions.
+                        </p>
+                        <p>
+                            Furthermore, I have expertise in <strong>Blogging</strong>, Graphic Design, Social Media Marketing, and Search Engine Optimization (SEO). I've officially published over <strong>15 informative blogs</strong> on <a href="https://pdfebooksworld.com" target="_blank" rel="noopener noreferrer">pdfebooksworld.com</a>, and contributed to around 20 blog banners and graphics, gaining real-time experience and contributions in the fields of Blogging, SEO, and Graphic Design.
+                        </p>
+
+                        {/* Personal Information */}
+                        <div className="personal-info">
+                            <h3>Personal Information</h3>
+                            <div className="row">
+                                <div className="col-sm-6">
+                                    <p><strong>Birthday:</strong> 03/02/2002</p>
+                                    <p><strong>Nationality:</strong> Pakistan</p>
+                                    <p><strong>Email:</strong> <a href="mailto:abidali129418@gmail.com">abidali129418@gmail.com</a></p>
+                                </div>
+                                <div className="col-sm-6">
+                                    <p><strong>Age:</strong> 23 Years</p>
+                                    <p><strong>Gender:</strong> Male</p>
+                                    <p><strong>Phone:</strong> <a href="tel:+923484492955">+92 3484492955</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Education Section */}
+                        <div id="education" className="education-section mt-5">
+                            <h3>Education</h3>
+                            <ul className="education-list">
+                                <li>
+                                    <strong>School:</strong> Shaheen Model High School Wari
+                                </li>
+                                <li>
+                                    <strong>College:</strong> GC Wari Dir Upper (Pre-medical, Graduated with A+ grade, 81% marks)
+                                </li>
+                                <li>
+                                    <strong>WordPress Development:</strong> Digiskills.pk
+                                </li>
+                                <li>
+                                    <strong>MERN Stack:</strong> S.M.I.T Peshawar
+                                </li>
+                                <li>
+                                    <strong>Front-end:</strong> S.M.I.T Peshawar
+                                </li>
+                                <li>
+                                    <strong>SEO:</strong> learnonline.pk (Online)
+                                </li>
+                                <li>
+                                    <strong>Blogging:</strong> Digiskills.pk (Online)
+                                </li>
+                                <li>
+                                    <strong>Graphics Designing:</strong> Digiskills.pk (Online)
+                                </li>
+                                <li>
+                                    <strong>Digital Literacy:</strong> Digiskills.pk (Online)
+                                </li>
+                            </ul>
+                            <p className="mt-3">
+                                Though my initial studies were in Pre-medical, I transitioned into Computer Science and am currently in my 4th year of ongoing study in the field.
+                            </p>
+                        </div>
+                        
+                        {/* Address Information */}
+                        <div className="address-info mt-5">
+                            <h3>Contact Information</h3>
+                            <p><strong>Permanent Address:</strong> Wari Dir Upper</p>
+                            <p><strong>Current Address:</strong> University Town, Peshawar</p>
+                        </div>
+
+                        {/* Call to Action Button */}
+                        <div className="text-center mt-5">
+                            <a href="./Hire_Now.html" className="btn btn-primary btn-lg e_pulse">Contact to Hire Now!</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-             
-            <div class="item" style="background-color: rgb(255, 255, 255); margin: 5px;">
-              <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 3em; font-weight: bolder; float: left;">02.</h2>
-              <i class="fa-solid fa-code" style="font-size: 6em; margin-top: 10%;"></i>
-              <br>
-              <h2><strong>MERN Stack Developer</strong></h2>
-              <p>We provides a MERN (Mongo DB, Express, React, Native) Stack web building services, Build your dream Website through programming with cheap prices and exceptional results. From simple forms to complexities of pages and tables, all with extraordinary results.</p>
-              <h2 style="float: left;"> Mongo DB &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 92% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 6ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Express&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 83%</h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> React &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 81% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Native &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 81% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <a href="./Hire_Now.html" class="btn btn-primary btn-large e_pulse">Contact Us Now!</a>
+        </section>
+
+        {/* My Skills and Services Section */}
+        <section className="skills-services-section dark-bg py-5"> {/* Using dark-bg and py-5 for padding */}
+            <div className="container text-center">
+                <h2 className="section-title">My Skills and Services</h2>
+                <p className="section-description">Here is a combination of all my skills and services, take a look!</p>
+                
+                <div className="skills-grid mt-5">
+                    {/* Skill Card 1: WordPress */}
+                    <div className="skill-card">
+                        <span className="skill-number">01.</span>
+                        <i className="fab fa-wordpress-simple skill-icon"></i>
+                        <h3>WordPress Web Developer</h3>
+                        <p>Build your dream website through WordPress with affordable prices and faster delivery. From CMS to plugins and themes, all covered with an extraordinary design!</p>
+                        
+                        <div className="skill-progress">
+                            <span>WP Elementer</span> <span className="progress-value">92%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '92%' }} role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span>Themes</span> <span className="progress-value">83%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '83%' }} role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span>Plugins</span> <span className="progress-value">81%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '81%' }} role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <a href="./Hire_Now.html" className="btn btn-primary mt-4">Contact Us Now!</a>
+                    </div>
+                    
+                    {/* Skill Card 2: MERN Stack */}
+                    <div className="skill-card">
+                        <span className="skill-number">02.</span>
+                        <i className="fas fa-code skill-icon"></i>
+                        <h3>MERN Stack Developer</h3>
+                        <p>Specializing in MERN (MongoDB, Express, React, Node.js) stack development. Build your dream website with programming, at competitive prices and exceptional results. From simple forms to complex pages and tables, all delivered with outstanding quality.</p>
+                        
+                        <div className="skill-progress">
+                            <span>Mongo DB</span> <span className="progress-value">92%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '92%' }} role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span> Express</span> <span className="progress-value">83%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '83%' }} role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span> React</span> <span className="progress-value">81%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '81%' }} role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span> Native</span> <span className="progress-value">81%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '81%' }} role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <a href="./Hire_Now.html" className="btn btn-primary mt-4">Contact Us Now!</a>
+                    </div>
+
+                    {/* Skill Card 3: Front-end */}
+                    <div className="skill-card">
+                        <span className="skill-number">03.</span>
+                        <i className="fas fa-crop skill-icon"></i>
+                        <h3>Front-end Developer</h3>
+                        <p>Providing front-end web page building services. Craft your dream UI using HTML, CSS, JavaScript, and frameworks like Bootstrap, with competitive pricing and fast turnaround. From basic HTML structure to advanced responsive CSS layouts, all delivered with extraordinary results!</p>
+                        
+                        <div className="skill-progress">
+                            <span>HTML</span> <span className="progress-value">92%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '92%' }} role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span>CSS</span> <span className="progress-value">83%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '83%' }} role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span>JavaScript</span> <span className="progress-value">81%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '81%' }} role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <a href="./Hire_Now.html" className="btn btn-primary mt-4">Contact Us Now!</a>
+                    </div>
+                    
+                    {/* Skill Card 4: SEO */}
+                    <div className="skill-card">
+                        <span className="skill-number">04.</span>
+                        <i className="fas fa-search skill-icon"></i>
+                        <h3>Search Engine Optimization (SEO)</h3>
+                        <p>Offering SEO services with in-depth research using premium tools like SEMRush and Ahrefs. I provide expertise in keyword research, niche selection, KGR keywords, and content optimization for top search engine rankings.</p>
+                        
+                        <div className="skill-progress">
+                            <span>On-Page SEO</span> <span className="progress-value">92%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '92%' }} role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span>Off-Page SEO</span> <span className="progress-value">83%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '83%' }} role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span>Technical SEO</span> <span className="progress-value">81%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '81%' }} role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                         <div className="skill-progress">
+                            <span>Semantic SEO</span> <span className="progress-value">81%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '81%' }} role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <a href="./Hire_Now.html" className="btn btn-primary mt-4">Contact Us Now!</a>
+                    </div>
+                    
+                    {/* Skill Card 5: Blogging */}
+                    <div className="skill-card">
+                        <span className="skill-number">05.</span>
+                        <i className="fas fa-blog skill-icon"></i>
+                        <h3>Blogging</h3>
+                        <p>As a developer, I've also built websites and published blogs. I've published over 10 informational blogs, 5 commercial blogs, and up to 10 local branding blogs.</p>
+                        
+                        <div className="skill-progress">
+                            <span>Informational Blogs</span> <span className="progress-value">92%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '92%' }} role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span>Commercial Blogs</span> <span className="progress-value">83%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '83%' }} role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div className="skill-progress">
+                            <span>Local Branding Blogs</span> <span className="progress-value">81%</span>
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '81%' }} role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <a href="./Hire_Now.html" className="btn btn-primary mt-4">Contact Us Now!</a>
+                    </div>
+                    
+                    {/* Placeholder for a potential 6th skill or just leave it empty */}
+                    {/* <div className="skill-card"> Div 6</div> */}
+                </div>
             </div>
+        </section>
 
-            <div class="item" style="background-color: rgb(255, 255, 255); margin: 5px;">
-              <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 3em; font-weight: bolder; float: left;">03.</h2>
-              <i class="fa-solid fa-crop" style="font-size: 6em; margin-top: 10%;"></i>
-              <br>
-              <h2><strong>Front-end Developer</strong></h2>
-              <p>We provide a Front-end web page building services, Build your dream UI through HTML, CSS, Javascript and framwork libraries like Bootstrap, with cheap prices and lesser time. From from Basic HTML structure to Advanced and responsive CSS layout  all are covered with an extraordinary result!</p>
-              <h2 style="float: left;"> HTML &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 92% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> CSS  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 83%</h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> JavaScript &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 81% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <a href="./Hire_Now.html" class="btn btn-primary btn-large e_pulse">Contact Us Now!</a>
-            </div>
-          </div>
-          <br>
-          <div class="supper1">
-            <div class="item" style="background-color: rgb(255, 255, 255); margin: 5px;">
-              <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 3em; font-weight: bolder; float: left;">04.</h2>
-              <i class="fa-brands fa-searchengin"style="font-size: 6em; margin-top: 10%;"></i>
-              <br>
-              <h2><strong>Search Engine Optimisation</strong></h2>
-              <p>We provides Search Engine Optimisation (SEO) services with a strong reseach with premium research tools like SEMRush and Ahrefs. Furthermore, We provides all services for keywords, Nieche Selection, KGR keywords, and content optimisation for high scale ranks.</p>
-              <h2 style="float: left;"> On-Page SEO  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 92% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Off-Page SEO  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 83%</h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Technical SEO  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 81% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Semantic SEO &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 81% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <a href="./Hire_Now.html" class="btn btn-primary btn-large e_pulse">Contact Us Now!</a>
-            </div> 
-            <div class="item" style="background-color: rgb(255, 255, 255); margin: 5px;">
-              <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 3em; font-weight: bolder; float: left;">05.</h2>
-              <i class="fa-solid fa-pen-nib"style="font-size: 6em; margin-top: 10%;"></i>
-              <br>
-              <h2><strong>Blogging</strong></h2>
-              <p>As a developer we had buit a websites and published a Blogs. We almost published +10 Informational Blogs, +5 Commercial Blogs, and upto 10 local branding Blogs.</p>
-              <h2 style="float: left;"> Informational Blogs  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 92% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Commercial Blogs  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 83%</h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <h2 style="float: left;"> Local Branding Blogs  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 81% </h2>
-              <br>
-              <br>
-              <br>
-              <div class="progress" style="border-radius: 3ch;">
-								<div class="bar bar-success bar80">
-								</div>
-							</div>
-              <a href="./Hire_Now.html" class="btn btn-primary btn-large e_pulse">Contact Us Now!</a>
-            </div>
-            <div class="item" style="background-color: rgb(255, 255, 255); margin: 5px;">Div 3</div>
-          </div>
-         </section>
-     <!-- //My Skills section Ends here! -->
-       <!-- /About Me Section ends from Here! -->
-       <footer>
-        <div class="card text-center">
-          <div class="card-header">
-            Abid Ali
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="social-links">
-                <ul class="social-links">
-                  <li><a href="https://x.com/AbidAli014" title="Twitter"><i class="icon-square icon-32 icon-twitter"></i></a></li>
-                  <li><a href="https://www.facebook.com/profile.php?id=61551367921508" title="Facebook"><i class="icon-square icon-32 icon-facebook"></i></a></li>
-                  <li><a href="mailto: abidali129418@gmail.com" title="Email"><i class="icon-square icon-envelope"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/abid-ali-b89794334/" title="Linkedin"><i class="icon-square icon-32 icon-linkedin"></i></a></li>
-                  <li><a href="https://www.pinterest.com/pdfebooksworld" title="Pinterest"><i class="icon-square icon-32 icon-pinterest"></i></a></li>
-                </ul>
-              </div>
-            </h5>
-            <p class="card-text">
-              <li style="text-decoration: none;">
-                <ul><a href="./index.html">Home Page</a></ul>
-                <ul><a href="./about_Me.html">Services</a></ul>
-                <ul><a href="./Clients.html">Clients</a></ul>
-                <ul><a href="./about_Me.html">Projects</a></ul>
-              </li>
-            </p>
-            <br>
-            <a href="./Hire_Now.html" class="btn btn-primary">Contact to Hire Now!</a>
-          </div>
-          <br>
-          <br>
-          <div class="card-footer text-body-secondary">
-            @Abid Ali all rights reserved ©copyright2025 Abid Ali
-          </div>
-        </div>
-        <br>
-        <br>
-      </footer>
-  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+      </main>
 
-</body>
-<script defer src="app.js"></script>
+      {/* <Footer /> */} {/* Your custom Footer Component */}
+    </div>
+  );
+}
 
-  <!-- Javascript Library Files -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.easing.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/parallax/jquery.parallax-1.1.3.js"></script>
-  <script src="assets/js/nagging-menu.js"></script>
-  <script src="assets/js/jquery.nav.js"></script>
-  <script src="assets/js/prettyPhoto/jquery.prettyPhoto.js"></script>
-  <script src="assets/js/portfolio/jquery.quicksand.js"></script>
-  <script src="assets/js/portfolio/setting.js"></script>
-  <script src="assets/js/hover/jquery-hover-effect.js"></script>
-  <script src="assets/js/jquery.scrollTo.min.js"></script>
-  <script src="assets/js/animate.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Custom Javascript File -->
-  <script src="assets/js/custom.js"></script>
-</html>
+export default About;
