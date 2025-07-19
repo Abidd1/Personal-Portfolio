@@ -28,8 +28,7 @@
   <!-- Critical CSS for initial rendering. You'd ideally extract critical CSS. -->
   <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="assets/js/app.min.js" as="script">
-  <link rel="preload" href="my.js" as="script">
-  <link rel="preload" href="my.css" as="script">
+  <link rel="stylesheet" href="my.css">
   <!-- Consider preloading other essential JS files if they are blocking -->
   
   <!-- Font Loading -->
@@ -773,5 +772,6 @@
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
+  <script src="my.js"></script>
 </body>
 </html>
