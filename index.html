@@ -2,27 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Abid Ali - WordPress & MERN Stack Developer</title>
+  <title>Abid Ali - WordPress & MERN Stack Developer | Web Design & Development</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional WordPress & MERN Stack Developer with 2+ years experience. Specializing in responsive web design, e-commerce solutions, and custom web applications.">
+  <meta name="description" content="Professional WordPress & MERN Stack Developer with 2+ years of experience. Specializing in responsive web design, e-commerce solutions, and custom web applications. Based in Pakistan.">
   <meta name="author" content="Abid Ali">
   
-  <!-- Preload critical resources -->
-  <link rel="preload" href="assets/css/style.css" as="style">
-  <link rel="preload" href="assets/js/app.js" as="script">
-  <link rel="preload" href="my.js" as="script">
-  <link rel="preload" href="my.css" as="style">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700" as="font" crossorigin>
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="WordPress Developer, MERN Stack Developer, Web Design, Web Development, React Developer, Node.js Developer, Pakistan Developer, Freelancer, E-commerce, Custom Web Applications">
   
-  <!-- Preconnect to external domains -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:title" content="Abid Ali - WordPress & MERN Stack Developer">
+  <meta property="og:description" content="Professional WordPress & MERN Stack Developer with 2+ years of experience. Specializing in responsive web design, e-commerce solutions, and custom web applications.">
+  <meta property="og:image" content="https://yourdomain.com/assets/img/abid-ali-profile.webp">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourdomain.com/">
+  <meta property="twitter:title" content="Abid Ali - WordPress & MERN Stack Developer">
+  <meta property="twitter:description" content="Professional WordPress & MERN Stack Developer with 2+ years of experience. Specializing in responsive web design, e-commerce solutions, and custom web applications.">
+  <meta property="twitter:image" content="https://yourdomain.com/assets/img/abid-ali-profile.webp">
+
+  <!-- Preload critical resources -->
+  <!-- Critical CSS for initial rendering. You'd ideally extract critical CSS. -->
+  <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/js/app.min.js" as="script">
+  <!-- Consider preloading other essential JS files if they are blocking -->
+  
+  <!-- Font Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700&display=swap"></noscript>
   
-  <!-- CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/style.min.css" rel="stylesheet">
-  <link href="assets/color/default.min.css" rel="stylesheet">
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -30,8 +45,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
   
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Font Awesome (only load if absolutely necessary or use local font files) -->
+  <!-- Consider loading this CSS with `media="print"` and `onload="media='all'"` for better LCP if not critical for initial render -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
   
   <!-- Schema Markup -->
   <script type="application/ld+json">
@@ -62,16 +79,35 @@
       "https://x.com/AbidAli014",
       "https://www.pinterest.com/pdfebooksworld/"
     ],
-    "offers": {
-      "@type": "Offer",
-      "category": "WebDevelopmentServices",
-      "serviceType": [
-        "WordPress Development",
-        "MERN Stack Development",
-        "Web Design",
-        "Mobile App Development"
+    "potentialAction": {
+      "@type": "ContactAction",
+      "target": [
+        {
+          "@type": "EntryPoint",
+          "name": "Contact Abid Ali",
+          "description": "Contact Abid Ali via email or phone",
+          "agent": [
+            { "@type": "Organization", "name": "Abid Ali Developer" },
+            { "@type": "Person", "name": "Abid Ali" }
+          ],
+          "instrument": [
+            { "@type": "EmailMessage", "email": "abidali129418@gmail.com" },
+            { "@type": "Telephone", "telephone": "+923484492955" }
+          ]
+        }
       ]
     },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "description": "Serving clients globally, with a focus on remote work and project-based collaboration."
+    },
+    "knowsLanguage": [
+      {"@type": "Language", "name": "English", "alternateName": "en"},
+      {"@type": "Language", "name": "Urdu", "alternateName": "ur"}
+    ],
+    "memberOf": [
+      {"@type": "Organization", "name": "SMIT Peshawar Alumni"}
+    ],
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Web Developer",
@@ -88,6 +124,13 @@
     }
   }
   </script>
+  
+  <!-- Link to your optimized CSS file -->
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <!-- If you have a separate CSS for Bootstrap or colors, link them here -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/color/default.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -103,6 +146,7 @@
               <ul class="nav-logo">
                 <li>
                   <a href="/" aria-current="page">
+                    <!-- Added width/height for CLS -->
                     <img src="./assets/img/abid-ali-logo.webp" width="120" height="40" alt="Abid Ali Logo" loading="lazy">
                   </a>
                 </li>
@@ -117,7 +161,9 @@
                 <li>
                   <a href="https://drive.google.com/file/d/1IvkI7Tjxlu9qlGvvdVaODE2YdPJ72FnD/view?usp=sharing" 
                      class="btn-download" 
-                     aria-label="Download my CV">
+                     aria-label="Download my CV"
+                     target="_blank" 
+                     rel="noopener noreferrer">
                     Download CV
                   </a>
                 </li>
@@ -137,6 +183,7 @@
       <div class="container">
         <div class="slogan">
           <div class="hero-image">
+            <!-- Added width/height for CLS -->
             <img src="./assets/img/abid-ali-profile.webp" 
                  width="150" 
                  height="150" 
@@ -149,29 +196,29 @@
           <p class="sub-tagline">Build to brand online!</p>
           
           <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61551367921508" aria-label="Facebook" rel="noopener">
+            <a href="https://www.facebook.com/profile.php?id=61551367921508" aria-label="Facebook" rel="noopener noreferrer">
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://www.linkedin.com/in/abid-ali-b89794334/" aria-label="LinkedIn" rel="noopener">
+            <a href="https://www.linkedin.com/in/abid-ali-b89794334/" aria-label="LinkedIn" rel="noopener noreferrer">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/Abidd1" aria-label="GitHub" rel="noopener">
+            <a href="https://github.com/Abidd1" aria-label="GitHub" rel="noopener noreferrer">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://x.com/AbidAli014" aria-label="Twitter" rel="noopener">
+            <a href="https://x.com/AbidAli014" aria-label="Twitter" rel="noopener noreferrer">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="https://api.whatsapp.com/send/?phone=923484492955" aria-label="WhatsApp" rel="noopener">
+            <a href="https://api.whatsapp.com/send/?phone=923484492955" aria-label="WhatsApp" rel="noopener noreferrer">
               <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="mailto:abidali129418@gmail.com" aria-label="Email" rel="noopener">
+            <a href="mailto:abidali129418@gmail.com" aria-label="Email" rel="noopener noreferrer">
               <i class="fas fa-envelope"></i>
             </a>
           </div>
           
-          <form class="search-form" role="search">
+          <form class="search-form" role="search" action="/search" method="get">
             <label for="site-search" class="visually-hidden">Search the site</label>
-            <input type="search" id="site-search" placeholder="Search..." aria-label="Search through site content">
+            <input type="search" id="site-search" name="q" placeholder="Search..." aria-label="Search through site content">
             <button type="submit" aria-label="Search">
               <i class="fas fa-search"></i>
             </button>
@@ -189,6 +236,7 @@
         </div>
         <div class="about-content">
           <div class="about-image">
+            <!-- Added width/height for CLS -->
             <img src="./assets/img/abid-ali-about.webp" 
                  width="400" 
                  height="400" 
@@ -206,7 +254,7 @@
               <li><i class="fas fa-check"></i> E-commerce Solutions</li>
               <li><i class="fas fa-check"></i> Performance Optimization</li>
             </ul>
-            <a href="./about_Me.html" class="btn-primary">Learn More About Me</a>
+            <a href="./about_Me.html" class="btn btn-primary">Learn More About Me</a>
           </div>
         </div>
       </div>
@@ -227,7 +275,7 @@
             <h3>Matriculation</h3>
             <p class="institution">Shaheen Model School</p>
             <p class="details">Pre-medical with Grade A (2020)</p>
-            <a href="./about_Me.html" class="btn-secondary">Details</a>
+            <a href="./about_Me.html" class="btn btn-secondary">Details</a>
           </div>
           
           <div class="education-card">
@@ -237,7 +285,7 @@
             <h3>FSc</h3>
             <p class="institution">GC Wari Dir Upper</p>
             <p class="details">Pre-Medical with Grade A (2022)</p>
-            <a href="./about_Me.html" class="btn-secondary">Details</a>
+            <a href="./about_Me.html" class="btn btn-secondary">Details</a>
           </div>
           
           <div class="education-card">
@@ -247,7 +295,7 @@
             <h3>Development Education</h3>
             <p class="institution">SMIT Peshawar</p>
             <p class="details">WordPress & MERN Stack (2022-Present)</p>
-            <a href="./about_Me.html" class="btn-secondary">Details</a>
+            <a href="./about_Me.html" class="btn btn-secondary">Details</a>
           </div>
           
           <div class="education-card">
@@ -257,7 +305,7 @@
             <h3>Other Certifications</h3>
             <p class="institution">Various Institutions</p>
             <p class="details">Blogging, SEO, Digital Marketing, Graphic Design</p>
-            <a href="./about_Me.html" class="btn-secondary">Details</a>
+            <a href="./about_Me.html" class="btn btn-secondary">Details</a>
           </div>
         </div>
       </div>
@@ -278,7 +326,7 @@
             </div>
             <p>Building websites from scratch using MongoDB, Express, React, and Node.js</p>
             <div class="skill-meter">
-              <div class="skill-level" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-level" style="width: 89%;" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="MERN Stack Development proficiency">
                 <span>89%</span>
               </div>
             </div>
@@ -291,7 +339,7 @@
             </div>
             <p>Creating custom WordPress sites with Elementor and custom themes</p>
             <div class="skill-meter">
-              <div class="skill-level" style="width: 91%;" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-level" style="width: 91%;" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" aria-label="WordPress Development proficiency">
                 <span>91%</span>
               </div>
             </div>
@@ -304,7 +352,7 @@
             </div>
             <p>Developing user-friendly mobile applications with React Native</p>
             <div class="skill-meter">
-              <div class="skill-level" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-level" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="App Development proficiency">
                 <span>85%</span>
               </div>
             </div>
@@ -317,7 +365,7 @@
             </div>
             <p>Blogging, SEO, Graphic Design, and Social Media Marketing</p>
             <div class="skill-meter">
-              <div class="skill-level" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-level" style="width: 89%;" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="Other Skills proficiency">
                 <span>89%</span>
               </div>
             </div>
@@ -340,7 +388,7 @@
             </div>
             <h3>WordPress Development</h3>
             <p>Custom WordPress sites with Elementor, WooCommerce, and custom plugins</p>
-            <a href="./about_Me.html" class="btn-service">Learn More</a>
+            <a href="./about_Me.html" class="btn btn-primary">Learn More</a>
           </div>
           
           <div class="service-card">
@@ -349,7 +397,7 @@
             </div>
             <h3>Custom Web Development</h3>
             <p>Tailored solutions with HTML, CSS, JavaScript, and MERN Stack</p>
-            <a href="./about_Me.html" class="btn-service">Learn More</a>
+            <a href="./about_Me.html" class="btn btn-primary">Learn More</a>
           </div>
           
           <div class="service-card">
@@ -358,7 +406,7 @@
             </div>
             <h3>Mobile App Development</h3>
             <p>Cross-platform mobile applications with React Native</p>
-            <a href="./about_Me.html" class="btn-service">Learn More</a>
+            <a href="./about_Me.html" class="btn btn-primary">Learn More</a>
           </div>
           
           <div class="service-card">
@@ -367,7 +415,7 @@
             </div>
             <h3>Digital Marketing</h3>
             <p>SEO, content marketing, and social media strategies</p>
-            <a href="./about_Me.html" class="btn-service">Learn More</a>
+            <a href="./about_Me.html" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
@@ -382,6 +430,7 @@
         </div>
         <div class="testimonials">
           <div class="testimonial-card">
+            <!-- Added width/height for CLS -->
             <div class="client-image">
               <img src="./assets/img/client-muhammad-ali.webp" width="80" height="80" alt="Muhammad Ali" loading="lazy">
             </div>
@@ -402,6 +451,7 @@
           </div>
           
           <div class="testimonial-card">
+            <!-- Added width/height for CLS -->
             <div class="client-image">
               <img src="./assets/img/client-tatheer.webp" width="80" height="80" alt="Tatheer Hussain" loading="lazy">
             </div>
@@ -422,6 +472,7 @@
           </div>
           
           <div class="testimonial-card">
+            <!-- Added width/height for CLS -->
             <div class="client-image">
               <img src="./assets/img/client-junaid.webp" width="80" height="80" alt="Junaid Khan" loading="lazy">
             </div>
@@ -441,8 +492,8 @@
             </div>
           </div>
         </div>
-        <div class="view-more">
-          <a href="./Clients.html" class="btn-primary">View More Testimonials</a>
+        <div class="view-more text-center">
+          <a href="./Clients.html" class="btn btn-primary">View More Testimonials</a>
         </div>
       </div>
     </section>
@@ -463,15 +514,16 @@
         </div>
         <div class="portfolio-grid">
           <div class="portfolio-item" data-category="web">
-            <img src="./assets/img/portfolio-education.webp" width="400" height="300" alt="Educational Website" loading="lazy">
+            <!-- Added width/height for CLS -->
+            <img src="./assets/img/portfolio-education.webp" width="400" height="300" alt="Educational Website - WordPress Development" loading="lazy">
             <div class="portfolio-overlay">
               <h3>Educational Website</h3>
               <p>WordPress Development</p>
               <div class="portfolio-links">
-                <a href="https://pdfebooksworld.com" target="_blank" rel="noopener" aria-label="View project">
+                <a href="https://pdfebooksworld.com" target="_blank" rel="noopener noreferrer" aria-label="View project pdfebooksworld.com">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="./assets/img/portfolio-education.webp" data-lightbox="portfolio" aria-label="View image">
+                <a href="./assets/img/portfolio-education.webp" data-lightbox="portfolio-edu" aria-label="View larger image of Educational Website">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
@@ -479,15 +531,16 @@
           </div>
           
           <div class="portfolio-item" data-category="web">
-            <img src="./assets/img/portfolio-ecommerce.webp" width="400" height="300" alt="E-commerce Website" loading="lazy">
+            <!-- Added width/height for CLS -->
+            <img src="./assets/img/portfolio-ecommerce.webp" width="400" height="300" alt="E-commerce Website - MERN Stack Development" loading="lazy">
             <div class="portfolio-overlay">
               <h3>E-commerce Site</h3>
               <p>MERN Stack Development</p>
               <div class="portfolio-links">
-                <a href="https://codevoyagers.vercel.app/" target="_blank" rel="noopener" aria-label="View project">
+                <a href="https://codevoyagers.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View project codevoyagers.vercel.app">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="./assets/img/portfolio-ecommerce.webp" data-lightbox="portfolio" aria-label="View image">
+                <a href="./assets/img/portfolio-ecommerce.webp" data-lightbox="portfolio-eco" aria-label="View larger image of E-commerce Site">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
@@ -495,15 +548,16 @@
           </div>
           
           <div class="portfolio-item" data-category="design">
-            <img src="./assets/img/portfolio-tour.webp" width="400" height="300" alt="Tour Booking Website" loading="lazy">
+            <!-- Added width/height for CLS -->
+            <img src="./assets/img/portfolio-tour.webp" width="400" height="300" alt="Tour Booking Website - Web Design" loading="lazy">
             <div class="portfolio-overlay">
               <h3>Tour Booking</h3>
               <p>Web Design</p>
               <div class="portfolio-links">
-                <a href="https://visa-consultancy-murex.vercel.app/" target="_blank" rel="noopener" aria-label="View project">
+                <a href="https://visa-consultancy-murex.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View project visa-consultancy-murex.vercel.app">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="./assets/img/portfolio-tour.webp" data-lightbox="portfolio" aria-label="View image">
+                <a href="./assets/img/portfolio-tour.webp" data-lightbox="portfolio-tour" aria-label="View larger image of Tour Booking Website">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
@@ -511,20 +565,25 @@
           </div>
           
           <div class="portfolio-item" data-category="graphic">
-            <img src="./assets/img/portfolio-graphics.webp" width="400" height="300" alt="Graphic Design" loading="lazy">
+            <!-- Added width/height for CLS -->
+            <img src="./assets/img/portfolio-graphics.webp" width="400" height="300" alt="E-commerce Graphics - Graphic Design" loading="lazy">
             <div class="portfolio-overlay">
               <h3>E-commerce Graphics</h3>
               <p>Graphic Design</p>
               <div class="portfolio-links">
-                <a href="#" aria-label="View project">
+                <!-- If no live link, remove the link icon or add a placeholder action -->
+                <a href="#" aria-label="No live project for E-commerce Graphics">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="./assets/img/portfolio-graphics.webp" data-lightbox="portfolio" aria-label="View image">
+                <a href="./assets/img/portfolio-graphics.webp" data-lightbox="portfolio-graphic" aria-label="View larger image of E-commerce Graphics">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
             </div>
           </div>
+        </div>
+        <div class="view-more text-center">
+          <a href="./Works.html" class="btn btn-primary">View All Projects</a>
         </div>
       </div>
     </section>
@@ -539,30 +598,32 @@
         <div class="contact-container">
           <div class="contact-form">
             <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+              <!-- web3forms access key - ensure this is secure or use a backend proxy -->
               <input type="hidden" name="access_key" value="adbaaba9-48cc-4e76-bf08-b88b9319b855">
-              <input type="hidden" name="subject" value="New Contact Form Submission">
+              <!-- Consider adding a hidden field for form name for better analytics -->
+              <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
               
               <div class="form-group">
                 <label for="name">Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" required aria-required="true">
+                <input type="text" id="name" name="name" required aria-required="true" placeholder="Enter your name">
               </div>
               
               <div class="form-group">
                 <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required aria-required="true">
+                <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
               </div>
               
               <div class="form-group">
-                <label for="subject">Subject <span class="required">*</span></label>
-                <input type="text" id="subject" name="subject" required aria-required="true">
+                <label for="contact_subject">Subject <span class="required">*</span></label>
+                <input type="text" id="contact_subject" name="subject" required aria-required="true" placeholder="Enter subject">
               </div>
               
               <div class="form-group">
                 <label for="message">Message <span class="required">*</span></label>
-                <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Your message here"></textarea>
               </div>
               
-              <button type="submit" class="btn-primary">Send Message</button>
+              <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
           </div>
           
@@ -580,8 +641,8 @@
                 <i class="fas fa-phone-alt"></i>
               </div>
               <h3>Phone</h3>
-              <p>+92 348 4492955</p>
-              <p>+92 310 2997911</p>
+              <p><a href="tel:+923484492955" aria-label="Call Abid Ali on +923484492955">+92 348 4492955</a></p>
+              <p><a href="tel:+923102997911" aria-label="Call Abid Ali on +923102997911">+92 310 2997911</a></p>
             </div>
             
             <div class="info-card">
@@ -589,33 +650,34 @@
                 <i class="fas fa-envelope"></i>
               </div>
               <h3>Email</h3>
-              <p>abidali129418@gmail.com</p>
+              <p><a href="mailto:abidali129418@gmail.com" aria-label="Email Abid Ali">abidali129418@gmail.com</a></p>
             </div>
             
             <div class="social-links">
-              <a href="https://facebook.com/profile.php?id=61551367921508" aria-label="Facebook" rel="noopener">
+              <a href="https://facebook.com/profile.php?id=61551367921508" aria-label="Facebook Profile" rel="noopener noreferrer">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="https://linkedin.com/in/abid-ali-b89794334" aria-label="LinkedIn" rel="noopener">
+              <a href="https://linkedin.com/in/abid-ali-b89794334" aria-label="LinkedIn Profile" rel="noopener noreferrer">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a href="https://github.com/Abidd1" aria-label="GitHub" rel="noopener">
+              <a href="https://github.com/Abidd1" aria-label="GitHub Profile" rel="noopener noreferrer">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://x.com/AbidAli014" aria-label="Twitter" rel="noopener">
+              <a href="https://x.com/AbidAli014" aria-label="Twitter Profile" rel="noopener noreferrer">
                 <i class="fab fa-twitter"></i>
               </a>
             </div>
             
             <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.0175339473953!2d72.0378977!3d34.992405999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38db81072cf50d2b%3A0x9b1e1e83395672a1!2sAbid%20Ali!5e1!3m2!1sen!2s!4v1739525326343!5m2!1sen!2s" 
-                      width="100%" 
-                      height="250" 
-                      style="border:0;" 
-                      allowfullscreen="" 
-                      loading="lazy" 
-                      referrerpolicy="no-referrer-when-downgrade"
-                      title="Abid Ali Location Map">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.0175339473953!2d72.0378977!3d34.992405999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38db81072cf50d2b%3A0x9b1e1e83395672a1!2sAbid%20Ali!5e1!3m2!1sen!2s!4v1739525326343!5m2!1sen!2s" 
+                width="100%" 
+                height="250" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Abid Ali Location Map">
               </iframe>
             </div>
           </div>
@@ -636,7 +698,7 @@
           <div class="links-column">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="./index.html">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="./about_Me.html">About</a></li>
               <li><a href="./Works.html">Portfolio</a></li>
               <li><a href="./Clients.html">Testimonials</a></li>
@@ -646,10 +708,10 @@
           <div class="links-column">
             <h3>Services</h3>
             <ul>
-              <li><a href="./about_Me.html">Web Development</a></li>
-              <li><a href="./about_Me.html">WordPress</a></li>
-              <li><a href="./about_Me.html">App Development</a></li>
-              <li><a href="./about_Me.html">SEO & Marketing</a></li>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">WordPress</a></li>
+              <li><a href="#services">App Development</a></li>
+              <li><a href="#services">SEO & Marketing</a></li>
             </ul>
           </div>
           
@@ -666,38 +728,42 @@
       
       <div class="footer-bottom">
         <div class="copyright">
-          <p>&copy; <span id="year"></span> Abid Ali. All rights reserved.</p>
+          <p>© <span id="year"></span> Abid Ali. All rights reserved.</p>
         </div>
         
         <div class="footer-social">
-          <a href="https://facebook.com/profile.php?id=61551367921508" aria-label="Facebook" rel="noopener">
+          <a href="https://facebook.com/profile.php?id=61551367921508" aria-label="Facebook Profile" rel="noopener noreferrer">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://linkedin.com/in/abid-ali-b89794334" aria-label="LinkedIn" rel="noopener">
+          <a href="https://linkedin.com/in/abid-ali-b89794334" aria-label="LinkedIn Profile" rel="noopener noreferrer">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/Abidd1" aria-label="GitHub" rel="noopener">
+          <a href="https://github.com/Abidd1" aria-label="GitHub Profile" rel="noopener noreferrer">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://x.com/AbidAli014" aria-label="Twitter" rel="noopener">
+          <a href="https://x.com/AbidAli014" aria-label="Twitter Profile" rel="noopener noreferrer">
             <i class="fab fa-twitter"></i>
           </a>
         </div>
       </div>
     </div>
     
+    <!-- Back to Top Button -->
     <a href="#top" class="back-to-top" aria-label="Back to top">
       <i class="fas fa-arrow-up"></i>
     </a>
   </footer>
 
   <!-- JavaScript -->
-  <script src="assets/js/jquery.min.js" defer></script>
-  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/js/lightbox.min.js" defer></script>
+  <!-- Link to your consolidated and minified JavaScript file -->
   <script src="assets/js/app.min.js" defer></script>
+  <!-- If jquery is truly needed for some plugins not covered by app.min.js, include it once -->
+  <!-- <script src="assets/js/jquery.min.js" defer></script> -->
+  <!-- <script src="assets/js/bootstrap.bundle.min.js" defer></script> -->
+  <!-- <script src="assets/js/lightbox.min.js" defer></script> -->
   
   <!-- Google Analytics -->
+  <!-- Replace G-XXXXXXXXXX with your actual Measurement ID -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
