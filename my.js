@@ -232,3 +232,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.documentElement.classList.remove('keyboard-nav');
   });
 });
+
+const hamburger = document.querySelector('.navbar-hamburger');
+const menu = document.querySelector('.navbar-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
