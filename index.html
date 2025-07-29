@@ -41,7 +41,7 @@
   
   <!-- Favicon -->
   <!-- NOTE: Favicons typically require local files. If assets folder is gone, these will break. -->
-  <!-- For now, I'll link to placeholders. Ideally, you'd have these locally. -->
+  <!-- Using placeholder links for now. Ideally, you'd have these locally. -->
   <link rel="apple-touch-icon" sizes="180x180" href="https://via.placeholder.com/180/476e23/ffffff?text=AI">
   <link rel="icon" type="image/png" sizes="32x32" href="https://via.placeholder.com/32/476e23/ffffff?text=AI">
   <link rel="icon" type="image/png" sizes="16x16" href="https://via.placeholder.com/16/476e23/ffffff?text=AI">
@@ -127,8 +127,10 @@
   </script>
   
   <!-- Link to your optimized CSS file -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Color CSS -->
   <link href="assets/color/default.min.css" rel="stylesheet">
   <link rel="stylesheet" href="my.css">
 
@@ -144,18 +146,7 @@
         <div class="navbar-inner">
           <div class="navigation">
             <nav aria-label="Main navigation">
-              <ul class="nav-logo">
-                <li>
-                  <a href="/" aria-current="page">
-                    <!-- Placeholder Logo -->
-                    <img src="https://via.placeholder.com/120x40/2563eb/ffffff?text=Logo" 
-                         width="120" 
-                         height="40" 
-                         alt="Abid Ali Logo Placeholder" 
-                         loading="lazy">
-                  </a>
-                </li>
-              </ul>
+              <!-- Removed Logo from Header Nav -->
               <ul class="nav-menu">
                 <li><a href="#intro" class="nav-link active">Home</a></li>
                 <li><a href="./about_Me.html" class="nav-link">About</a></li>
@@ -242,7 +233,7 @@
         <div class="about-content">
           <div class="about-image">
             <!-- Placeholder Image: Using Unsplash for the about image -->
-            <img src="https://images.unsplash.com/photo-1557862457-8fbc72712c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZGV2ZWxvcGVyfGVufDB8fHx8MTY2Njc4NTQ1OQ&ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&auto=format" 
+            <img src="https://images.unsplash.com/photo-1557862457-8fbc7251762202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZGV2ZWxvcGVyfGVufDB8fHx8MTY2Njc4NTQ1OQ&ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&auto=format" 
                  width="400" 
                  height="400" 
                  alt="Abid Ali working on laptop placeholder from Unsplash" 
@@ -520,7 +511,8 @@
         <div class="portfolio-grid">
           <div class="portfolio-item" data-category="web">
             <!-- Placeholder Image: Using Unsplash for portfolio -->
-            <img src="https://images.unsplash.com/photo-1451187580459-434e96763b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fHx8MTY2Njc4NjQ5MQ&ixlib=rb-4.0.3&q=80&w=400&h=300&fit=crop&auto=format" width="400" height="300" alt="Educational Website Placeholder from Unsplash" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1451187580459-434e96763b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fHx8MTY2Njc4
+            6491&ixlib=rb-4.0.3&q=80&w=400&h=300&fit=crop&auto=format" width="400" height="300" alt="Educational Website Placeholder from Unsplash" loading="lazy">
             <div class="portfolio-overlay">
               <h3>Educational Website</h3>
               <p>WordPress Development</p>
@@ -528,8 +520,7 @@
                 <a href="https://pdfebooksworld.com" target="_blank" rel="noopener noreferrer" aria-label="View project pdfebooksworld.com">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://images.unsplash.com/photo-1451187580459-434e96763b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fHx8MTY2Njc4
-                6491&ixlib=rb-4.0.3&q=80&w=1200&auto=format" data-lightbox="portfolio-edu" aria-label="View larger image of Educational Website">
+                <a href="https://images.unsplash.com/photo-1451187580459-434e96763b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fHx8MTY2Njc4NjQ5MQ&ixlib=rb-4.0.3&q=80&w=1200&auto=format" data-lightbox="portfolio-edu" aria-label="View larger image of Educational Website">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
@@ -603,7 +594,7 @@
         </div>
         <div class="contact-container">
           <div class="contact-form">
-            <form id="contactForm" action="https://api.webforms.com/submit" method="POST">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
               <!-- web3forms access key - ensure this is secure or use a backend proxy -->
               <input type="hidden" name="access_key" value="adbaaba9-48cc-4e76-bf08-b88b9319b855">
               <!-- Consider adding a hidden field for form name for better analytics -->
