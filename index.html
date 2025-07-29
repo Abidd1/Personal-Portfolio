@@ -15,34 +15,37 @@
   <meta property="og:url" content="https://yourdomain.com/">
   <meta property="og:title" content="Abid Ali - WordPress & MERN Stack Developer">
   <meta property="og:description" content="Professional WordPress & MERN Stack Developer with 2+ years of experience. Specializing in responsive web design, e-commerce solutions, and custom web applications.">
-  <meta property="og:image" content="https://yourdomain.com/assets/img/abid-ali-profile.webp">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8YmVpbmclMjBhZGRlZHxlbnwwfHx8fDE2NjY2ODkzNTE&ixlib=rb-4.0.3&q=80&w=400"> <!-- Unsplash Link for OG Image -->
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://yourdomain.com/">
   <meta property="twitter:title" content="Abid Ali - WordPress & MERN Stack Developer">
   <meta property="twitter:description" content="Professional WordPress & MERN Stack Developer with 2+ years of experience. Specializing in responsive web design, e-commerce solutions, and custom web applications.">
-  <meta property="twitter:image" content="https://yourdomain.com/assets/img/abid-ali-profile.webp">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8YmVpbmclMjBhZGRlZHxlbnwwfHx8fDE2NjY2ODkzNTE&ixlib=rb-4.0.3&q=80&w=400"> <!-- Unsplash Link for Twitter Image -->
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="assets/js/app.min.js" as="script">
-  <link rel="stylesheet" href="my.css">
-  
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="my.css" as="style"> <!-- Assuming my.css is local -->
+  <link rel="preload" href="assets/css/style.min.css" as="style"> <!-- Assuming this is local -->
+
   <!-- Font Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700&display=swap"></noscript>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap"></noscript>
   
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <!-- NOTE: Favicons typically require local files. If assets folder is gone, these will break. -->
+  <!-- For now, I'll link to placeholders. Ideally, you'd have these locally. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://via.placeholder.com/180/476e23/ffffff?text=AI">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://via.placeholder.com/32/476e23/ffffff?text=AI">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://via.placeholder.com/16/476e23/ffffff?text=AI">
+  <link rel="manifest" href="https://via.placeholder.com/site.webmanifest"> <!-- Placeholder for manifest -->
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
@@ -59,7 +62,7 @@
       "@type": "WebPage",
       "@id": "https://yourdomain.com"
     },
-    "image": "https://yourdomain.com/assets/img/abid-ali-profile.webp",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8YmVpbmclMjBhZGRlZHxlbnwwfHx8fDE2NjY2ODkzNTE&ixlib=rb-4.0.3&q=80&w=400",
     "description": "Professional WordPress and MERN Stack Developer with expertise in web design and development",
     "jobTitle": "WordPress | MERN Stack Developer",
     "address": {
@@ -124,11 +127,10 @@
   </script>
   
   <!-- Link to your optimized CSS file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.min.css" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Color CSS -->
   <link href="assets/color/default.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="my.css">
 
 </head>
 
@@ -145,8 +147,12 @@
               <ul class="nav-logo">
                 <li>
                   <a href="/" aria-current="page">
-                    <!-- Added width/height for CLS -->
-                    <img src="./assets/img/abid-ali-logo.webp" width="120" height="40" alt="Abid Ali Logo" loading="lazy">
+                    <!-- Placeholder Logo -->
+                    <img src="https://via.placeholder.com/120x40/2563eb/ffffff?text=Logo" 
+                         width="120" 
+                         height="40" 
+                         alt="Abid Ali Logo Placeholder" 
+                         loading="lazy">
                   </a>
                 </li>
               </ul>
@@ -182,11 +188,11 @@
       <div class="container">
         <div class="slogan">
           <div class="hero-image">
-            <!-- Placeholder Image: Replace with your actual profile image -->
-            <img src="https://via.placeholder.com/150/710378/ffffff?text=AI" 
+            <!-- Placeholder Image: Using Unsplash for the hero profile image -->
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8YmVpbmclMjBhZGRlZHxlbnwwfHx8fDE2NjY2ODkzNTE&ixlib=rb-4.0.3&q=80&w=150&h=150&fit=crop&auto=format" 
                  width="150" 
                  height="150" 
-                 alt="Abid Ali Profile Picture Placeholder" 
+                 alt="Abid Ali Profile Picture Placeholder from Unsplash" 
                  loading="eager"
                  class="profile-img">
           </div>
@@ -235,11 +241,11 @@
         </div>
         <div class="about-content">
           <div class="about-image">
-            <!-- Placeholder Image: Replace with your actual about image -->
-            <img src="https://via.placeholder.com/400/476e23/ffffff?text=AI+Dev" 
+            <!-- Placeholder Image: Using Unsplash for the about image -->
+            <img src="https://images.unsplash.com/photo-1557862457-8fbc72712c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZGV2ZWxvcGVyfGVufDB8fHx8MTY2Njc4NTQ1OQ&ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&auto=format" 
                  width="400" 
                  height="400" 
-                 alt="Abid Ali working on laptop placeholder" 
+                 alt="Abid Ali working on laptop placeholder from Unsplash" 
                  loading="lazy"
                  class="rounded-img">
           </div>
@@ -429,9 +435,9 @@
         </div>
         <div class="testimonials">
           <div class="testimonial-card">
-            <!-- Placeholder Image: Replace with actual client image -->
+            <!-- Placeholder Image: Using Unsplash for client image -->
             <div class="client-image">
-              <img src="https://via.placeholder.com/80/037171/ffffff?text=C1" width="80" height="80" alt="Muhammad Ali" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8dXNlcnxlbnwwfHx8fDE2NjY2OTEzMDM&ixlib=rb-4.0.3&q=80&w=80&h=80&fit=crop&auto=format" width="80" height="80" alt="Muhammad Ali Placeholder from Unsplash" loading="lazy">
             </div>
             <div class="client-info">
               <h3>Muhammad Ali</h3>
@@ -450,9 +456,9 @@
           </div>
           
           <div class="testimonial-card">
-            <!-- Placeholder Image: Replace with actual client image -->
+            <!-- Placeholder Image: Using Unsplash for client image -->
             <div class="client-image">
-              <img src="https://via.placeholder.com/80/107140/ffffff?text=C2" width="80" height="80" alt="Tatheer Hussain" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8dXNlcnxlbnwwfHx8fDE2NjY2OTEzMjU&ixlib=rb-4.0.3&q=80&w=80&h=80&fit=crop&auto=format" width="80" height="80" alt="Tatheer Hussain Placeholder from Unsplash" loading="lazy">
             </div>
             <div class="client-info">
               <h3>Tatheer Hussain</h3>
@@ -471,9 +477,9 @@
           </div>
           
           <div class="testimonial-card">
-            <!-- Placeholder Image: Replace with actual client image -->
+            <!-- Placeholder Image: Using Unsplash for client image -->
             <div class="client-image">
-              <img src="https://via.placeholder.com/80/710338/ffffff?text=C3" width="80" height="80" alt="Junaid Khan" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fHVzZXJ8ZW58MHx8fHwxNjY2NjkxMzU1&ixlib=rb-4.0.3&q=80&w=80&h=80&fit=crop&auto=format" width="80" height="80" alt="Junaid Khan Placeholder from Unsplash" loading="lazy">
             </div>
             <div class="client-info">
               <h3>Junaid Khan</h3>
@@ -513,8 +519,8 @@
         </div>
         <div class="portfolio-grid">
           <div class="portfolio-item" data-category="web">
-            <!-- Placeholder Image: Replace with actual portfolio image -->
-            <img src="https://via.placeholder.com/400x300/a0a0a0/ffffff?text=Project+1" width="400" height="300" alt="Educational Website - WordPress Development Placeholder" loading="lazy">
+            <!-- Placeholder Image: Using Unsplash for portfolio -->
+            <img src="https://images.unsplash.com/photo-1451187580459-434e96763b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fHx8MTY2Njc4NjQ5MQ&ixlib=rb-4.0.3&q=80&w=400&h=300&fit=crop&auto=format" width="400" height="300" alt="Educational Website Placeholder from Unsplash" loading="lazy">
             <div class="portfolio-overlay">
               <h3>Educational Website</h3>
               <p>WordPress Development</p>
@@ -522,7 +528,8 @@
                 <a href="https://pdfebooksworld.com" target="_blank" rel="noopener noreferrer" aria-label="View project pdfebooksworld.com">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="./assets/img/portfolio-education.webp" data-lightbox="portfolio-edu" aria-label="View larger image of Educational Website">
+                <a href="https://images.unsplash.com/photo-1451187580459-434e96763b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fHx8MTY2Njc4
+                6491&ixlib=rb-4.0.3&q=80&w=1200&auto=format" data-lightbox="portfolio-edu" aria-label="View larger image of Educational Website">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
@@ -530,8 +537,8 @@
           </div>
           
           <div class="portfolio-item" data-category="web">
-            <!-- Placeholder Image: Replace with actual portfolio image -->
-            <img src="https://via.placeholder.com/400x300/a0a0a0/ffffff?text=Project+2" width="400" height="300" alt="E-commerce Website - MERN Stack Development Placeholder" loading="lazy">
+            <!-- Placeholder Image: Using Unsplash for portfolio -->
+            <img src="https://images.unsplash.com/photo-1522202176988-6ce70202118a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8ZWNvbW1lcmNlfGVufDB8fHx8MTY2Njc4NjU2OQ&ixlib=rb-4.0.3&q=80&w=400&h=300&fit=crop&auto=format" width="400" height="300" alt="E-commerce Website Placeholder from Unsplash" loading="lazy">
             <div class="portfolio-overlay">
               <h3>E-commerce Site</h3>
               <p>MERN Stack Development</p>
@@ -539,7 +546,7 @@
                 <a href="https://codevoyagers.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View project codevoyagers.vercel.app">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="./assets/img/portfolio-ecommerce.webp" data-lightbox="portfolio-eco" aria-label="View larger image of E-commerce Site">
+                <a href="https://images.unsplash.com/photo-1522202176988-6ce70202118a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8ZWNvbW1lcmNlfGVufDB8fHx8MTY2Njc4NjU2OQ&ixlib=rb-4.0.3&q=80&w=1200&auto=format" data-lightbox="portfolio-eco" aria-label="View larger image of E-commerce Site">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
@@ -547,8 +554,8 @@
           </div>
           
           <div class="portfolio-item" data-category="design">
-            <!-- Placeholder Image: Replace with actual portfolio image -->
-            <img src="https://via.placeholder.com/400x300/a0a0a0/ffffff?text=Project+3" width="400" height="300" alt="Tour Booking Website - Web Design Placeholder" loading="lazy">
+            <!-- Placeholder Image: Using Unsplash for portfolio -->
+            <img src="https://images.unsplash.com/photo-1506905925346-21bdb2a69ce6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8dHJhdmVsfGVufDB8fHx8MTY2Njc4NjYxNQ&ixlib=rb-4.0.3&q=80&w=400&h=300&fit=crop&auto=format" width="400" height="300" alt="Tour Booking Website Placeholder from Unsplash" loading="lazy">
             <div class="portfolio-overlay">
               <h3>Tour Booking</h3>
               <p>Web Design</p>
@@ -556,7 +563,7 @@
                 <a href="https://visa-consultancy-murex.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View project visa-consultancy-murex.vercel.app">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="./assets/img/portfolio-tour.webp" data-lightbox="portfolio-tour" aria-label="View larger image of Tour Booking Website">
+                <a href="https://images.unsplash.com/photo-1506905925346-21bdb2a69ce6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8dHJhdmVsfGVufDB8fHx8MTY2Njc4NjYxNQ&ixlib=rb-4.0.3&q=80&w=1200&auto=format" data-lightbox="portfolio-tour" aria-label="View larger image of Tour Booking Website">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
@@ -564,8 +571,8 @@
           </div>
           
           <div class="portfolio-item" data-category="graphic">
-            <!-- Placeholder Image: Replace with actual portfolio image -->
-            <img src="https://via.placeholder.com/400x300/a0a0a0/ffffff?text=Project+4" width="400" height="300" alt="E-commerce Graphics - Graphic Design Placeholder" loading="lazy">
+            <!-- Placeholder Image: Using Unsplash for portfolio -->
+            <img src="https://images.unsplash.com/photo-1512758032015-e1848568629a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTd8fGdyYXBoaWN8ZW58MHx8fHwxNjY2Nzg2Njgy&ixlib=rb-4.0.3&q=80&w=400&h=300&fit=crop&auto=format" width="400" height="300" alt="E-commerce Graphics Placeholder from Unsplash" loading="lazy">
             <div class="portfolio-overlay">
               <h3>E-commerce Graphics</h3>
               <p>Graphic Design</p>
@@ -574,7 +581,7 @@
                 <a href="#" aria-label="No live project for E-commerce Graphics">
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="./assets/img/portfolio-graphics.webp" data-lightbox="portfolio-graphic" aria-label="View larger image of E-commerce Graphics">
+                <a href="https://images.unsplash.com/photo-1512758032015-e1848568629a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTd8fGdyYXBoaWN8ZW58MHx8fHwxNjY2Nzg2Njgy&ixlib=rb-4.0.3&q=80&w=1200&auto=format" data-lightbox="portfolio-graphic" aria-label="View larger image of E-commerce Graphics">
                   <i class="fas fa-search"></i>
                 </a>
               </div>
@@ -596,7 +603,7 @@
         </div>
         <div class="contact-container">
           <div class="contact-form">
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <form id="contactForm" action="https://api.webforms.com/submit" method="POST">
               <!-- web3forms access key - ensure this is secure or use a backend proxy -->
               <input type="hidden" name="access_key" value="adbaaba9-48cc-4e76-bf08-b88b9319b855">
               <!-- Consider adding a hidden field for form name for better analytics -->
@@ -689,7 +696,8 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="./assets/img/abid-ali-logo-light.webp" width="120" height="40" alt="Abid Ali Logo" loading="lazy">
+          <!-- Placeholder Logo -->
+          <img src="https://via.placeholder.com/120x40/ffffff/000000?text=Logo" width="120" height="40" alt="Abid Ali Logo Placeholder" loading="lazy">
           <p>Building digital experiences that matter</p>
         </div>
         
