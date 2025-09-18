@@ -31,3 +31,5 @@ Telegram: https://t.me/+923484492955
 
 /for any querry or just want to say hi we are here 24/7 
 /Contact us any time 
+
+The very first major update is coming soon 🔜 
