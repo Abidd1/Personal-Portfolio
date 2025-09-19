@@ -1,35 +1,62 @@
-Thanks for viewing this Portfolio!
+Abid Ali - React.js Developer Portfolio
+Thank you for viewing my portfolio.
 
-Author: Abid Ali
-URL: https://github.com/Abidd1/personal_portfolio 
-Developer: Abid Ali
-Portfolio URL: https://abid-gamma.vercel.app
-Here is an exciting update for you, 
-abid ali new Updated React JS portfolio is live now 
-https://abid-web-developer.vercel.app 
-Email: abidali129418@gmail.com  
-Whats'App: https://wa.me/+923244422129
-Telegram: https://t.me/+923484492955 
+Portfolio Links
 
-*languages that we are expirtise are following 
-1 HTML
-2 CSS
-3 JavaScript 
-4 TypeScript
+New Portfolio: https://abid-web-developer.vercel.app
 
-*Frameworks and libraries 
-1 React 
-2 Bootstrap 
+Original Portfolio: https://abid-gamma.vercel.app
 
-*Backeind 
-1 Mongo DB 
-2 Express 
-3 React  
-4 Native 
-5 MySQL 
+GitHub Repository: https://github.com/Abidd1/personal_portfolio
+
+Expertise
+Languages
+
+HTML
+
+CSS
+
+JavaScript
+
+TypeScript
+
+Frameworks & Libraries
+
+React.js
+
+Bootstrap
+
+Backend
+
+MongoDB
+
+Express
+
+React Native
+
+MySQL
+
+Contact
+We are available 24/7 to answer any questions or discuss potential projects.
+
+Email: abidali129418@gmail.com
+
+WhatsApp: https://wa.me/+923244422129
+
+Telegram: https://t.me/+923484492955
+
+Note: A major update to my portfolio is coming soon.
 
 
-/for any querry or just want to say hi we are here 24/7 
-/Contact us any time 
 
-The very first major update is coming soon 🔜 
+
+
+
+
+
+
+
+
+
+
+
